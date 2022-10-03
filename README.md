@@ -4,7 +4,9 @@
 
 
 Install Jenkins: <https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-22-04>
+
 Install docker and docker-compose and add jenkins to docker group `sudo usermod -a -G docker jenkins`. 
+
 Install python3 and then `pip3 install ansible`
 
 - Copy the jobs from `jenkins-jobs` to `/var/lib/jenkins/jobs/`
