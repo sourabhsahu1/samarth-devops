@@ -1,0 +1,58 @@
+version: '3.7'
+
+services:
+  {{ docker_service_name }}:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    hostname: "{{ docker_service_name }}"
+
+    ports:
+      - 8006:8000
+
+    expose:
+      - 8000
+    command: gunicorn --workers=4 --threads=10 settings.wsgi:application --bind 0.0.0.0:8000
+    
+    deploy:
+      placement:
+        constraints:
+          - node.role == {{ var_docker_deploy_node_type }} 
+      replicas: {{ replicas }}      
+      update_config:
+        parallelism: 1
+        delay: 0s
+        failure_action: rollback
+        order: start-first
+      rollback_config:
+        parallelism: 1
+        delay: 0s
+      restart_policy:
+        condition: on-failure
+    
+    volumes:
+      # - {{ host_logs_location }}:{{ docker_logs_location }}
+      - static_volume:/home/app/staticfiles
+    
+    networks:
+      application_default:
+        aliases:
+            - {{ network_alias_name }}
+
+    env_file:
+      - {{ env_file_deployment_location }}
+    environment:
+      - IS_WEB=true
+
+  worker:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    restart: on-failure
+    env_file:
+      - {{ env_file_deployment_location }}
+    command: celery worker --app=settings.celery.app --concurrency=2 --hostname=worker@%h --loglevel=INFO
+
+networks:
+  application_default:
+    external: true
+
+volumes:
+  static_volume:
+  media_volume:

@@ -1,0 +1,43 @@
+---
+# vars file for deploy-sb-ext
+# For script
+template_compose_file_name: form-service-compose-file.j2
+template_env_file_name: form-service-env.j2
+compose_file_name: "{{ service_form_service }}.yml"
+env_file_name: "{{ service_form_service }}.env"
+compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name }}"
+env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
+user_friendly_name: form service
+
+
+# For service
+application_port: "{{ service_form_port }}"
+image_name: "{{ image_form_service }}"
+tag: "{{ tags_form_service }}"
+host_port: "{{ application_port }}"
+docker_port: "{{ application_port }}"
+replicas: "{{ service_replicas_form_service }}"
+reserved_memory: "{{ service_mem_reserved_form_service }}"
+limited_memory: "{{ service_mem_limit_form_service }}"
+health_check_endpoint: http://127.0.0.1:{{ docker_port }}/v1/course/new 
+network_alias_name: "{{ network_alias_form_service }}"
+docker_service_stack_name: smf
+docker_service_name: "{{ service_form_service }}"
+force_reload: "{{ force_reload_form_service }}"
+host_logs_location: "{{ form_logs_path }}"
+docker_logs_location: /logs
+
+spring_datasource_jdbc_url: jdbc:postgresql://{{ postgresql_host }}:{{ postgresql_port }}/{{ postgresql_user_profile_database }}
+
+# For application
+spring_data_mongodb_uri: mongodb://{{ mongodb_user }}:{{ mongodb_password | urlencode }}@{{ mongodb_host }}:{{ mongodb_port }}/{{ mongodb_authentication_database }}
+enable_new_assessments: 1
+bodhi_ui_index: lexcontentindex
+bodhi_content_port: "{{ service_content_service_port }}"
+iap_certification_url: https://{{ var_common_iap_base }}/backend/Profile/CertificationResult
+com_infosys_root_org: "{{ var_common_root_org }}"
+com_infosys_org: "{{ var_common_org }}"
+com_infosys_neo4j_ip: http://10.177.157.22:7474/graphaware/
+com_infosys_enable_access_control: "{{ var_form_service_enable_access_control }}"
+app_name: "Lex"
+infosys_lex_core_ip: http://{{ network_alias_lex_core_service }}:{{ service_lex_core_port }}

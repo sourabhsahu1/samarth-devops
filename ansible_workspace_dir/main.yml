@@ -1,0 +1,29 @@
+---
+# - hosts: "app_north_virginia_lex_dev"
+- hosts: "{{ deploy_host_name }}"
+  become: yes
+  strategy: free
+  vars_files:
+    - "vars/main.yml"
+  roles:
+    - role: deploy-web-service
+      tags: [deploy-web-service]
+    - role: deploy-form-service
+      tags: [deploy-form-service]
+    - role: deploy-user-service
+      tags: [deploy-user-service]
+    - role: deploy-gateway-service
+      tags: [deploy-gateway-service]
+    - role: deploy-analytics-service
+      tags: [deploy-analytics-service]
+    - role: stack-proxy
+      tags: [stack-proxy]
+    - role: deploy-esamwad-backend
+      tags: [deploy-esamwad-backend]
+
+      #  tasks:
+      #    - name: Remove the env directory
+      #      file:
+      #        path: "{{ env_files_dir }}"
+      #        state: absent
+

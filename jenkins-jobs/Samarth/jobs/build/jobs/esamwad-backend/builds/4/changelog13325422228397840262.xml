@@ -1,0 +1,10 @@
+commit 817f7d10394732083a108aa8619df2a41f631d7c
+tree 7925c221ce70610440dacc9d7fed67c4ae2caadb
+parent fa823a5f49f22321ce7aaae46bbcc77c457461f8
+author tushar5526 <codingid6@gmail.com> 2022-10-02 18:56:56 +0530
+committer tushar5526 <codingid6@gmail.com> 2022-10-02 18:56:56 +0530
+
+    Added Jenkinsfile
+
+
+:100644 100644 8188904fa56aad4dbbb7f21c5821270c973a618c da3ed2fbcc7b1113b8e6c3074db4a0fea313b62a M	Jenkinsfile

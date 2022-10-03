@@ -1,0 +1,696 @@
+Started by user [8mha:////4NsbvUkkzT/jDgCBPQhw1vzBVr3+knxaqRjKIg+/zUygAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Obtained Jenkinsfile from git git@github.com:Samarth-HP/esamwad-backend.git
+[8mha:////4IAi0Xt4ra9y6d7/3y8qdPGjtKYVy4tpoHdIhH28Xs1IAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4FH1iZByzsZzOVTdotXzBSPcHVGbzrqrD2mtCOTtV/pyAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4KwnKUetk70vN8RH0FDM5SGN1RJP6hg9x8IRaCfufAPUAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/lib/jenkins/workspace/ESamwad/build
+[8mha:////4MB1hg+nYASaN6pSwS0OkVbzrQLCESI4CxiUHWzfDL0OAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4COdtaQOtUKKEo3vgo8BNnvw+KwQBtiBkR9x5+HuIlisAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4FvV5/Mlvh7qqw4Z2wWwFu19erb7ucMZ4LdNGxgUO+LlAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Checkout)
+[8mha:////4I3BEf7edoqJx0iFUSf5g6NjEMExbZT310ftOg6mccAPAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[8mha:////4LF02HxFYmmVIlYCSrufBUnJi/Lskuf41SyvphBeuAxcAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED8v8DEJvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+using credential tushar-jenkins
+Cloning the remote Git repository
+Cloning repository git@github.com:Samarth-HP/esamwad-backend.git
+ > git init /var/lib/jenkins/workspace/ESamwad/build # timeout=10
+Fetching upstream changes from git@github.com:Samarth-HP/esamwad-backend.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --force --progress -- git@github.com:Samarth-HP/esamwad-backend.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:Samarth-HP/esamwad-backend.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/jenkins-test^{commit} # timeout=10
+Checking out Revision 4b3a06a1bc85c8605707feea8dfc5a215d9f4ac9 (refs/remotes/origin/jenkins-test)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4b3a06a1bc85c8605707feea8dfc5a215d9f4ac9 # timeout=10
+Commit message: "Added Jenkinsfile"
+ > git rev-list --no-walk 4b3a06a1bc85c8605707feea8dfc5a215d9f4ac9 # timeout=10
+[8mha:////4CWXebdHuAVPi7QvMFCg1wUvETqU9Bi9H80gW88dpzCrAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED9uwSoQvAAAAA==[0m[Pipeline] sh
++ git rev-parse --short HEAD
+[8mha:////4CtktEigrEhrfdhOSJvnkY+8984ms+nl3YWxoBytg6ymAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMnSDbC/LdtvsAfEnCxL0AAAA=[0m[Pipeline] sh
++ echo web_4b3a06a_7
+[8mha:////4Akdxq9fOgKzAnF8FcJL6RZx2vh5EVboWv6sk9/TzJZOAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIMjY1jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9YJsL8jLsv8APXjZ3b0AAAA=[0m[Pipeline] echo
+web_4b3a06a_7
+[8mha:////4DTot9VI4gqqp/uOSLSdjG9HajpuaEbgIUjrBqLRCsPVAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPyRmLRr0AAAA=[0m[Pipeline] }
+[8mha:////4Bp/B2/xmTRO1RUhCGhzjYyH2xLPKm7VQAB1zREL/XNAAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQlSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPw2Hi4r0AAAA=[0m[Pipeline] // stage
+[8mha:////4DJITlPTtrs38OZtIS/gjoEIHKyOz5vQBA6QQwfM17s0AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjpHSIitZywwtMYowT6y7YF5KKF/E1/oAhEhVb7ay0mucLyhThQNHJzmLvMTVeDmF0ucmJYn8JNMmOzrIhTBSs1HbS1NrjgprYwhJRwErB2mITKHl0DBvVmbupgkFXnTjmba+g8O0NHiBUNrOJ/IU5wvY6tonw5/krgHlgEDVDsas/x/INoKa7ysEAAAA=[0m[Pipeline] stage
+[8mha:////4GfgLpAiyG696Jl1bS4Nru1JTHBCtloeCdBIkASdsQHXAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (docker-build)
+[8mha:////4EDZOIeuUPmqx7GEDIpURtZjmjFTTk7QjFo3vXRvOZgOAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LjSKW+AAAA[0m[Pipeline] sh
++ docker build -t localhost:5000/samarth-esamwad-backend-service:web_4b3a06a_7 app/
+Sending build context to Docker daemon   32.8MB
+Step 1/14 : FROM python:3.8.0-alpine
+3.8.0-alpine: Pulling from library/python
+89d9c30c1d48: Already exists
+910c49c00810: Pulling fs layer
+66564da92047: Pulling fs layer
+bb0265c0d9a9: Pulling fs layer
+b86dfbfbb035: Pulling fs layer
+b86dfbfbb035: Waiting
+bb0265c0d9a9: Verifying Checksum
+bb0265c0d9a9: Download complete
+910c49c00810: Verifying Checksum
+910c49c00810: Download complete
+910c49c00810: Pull complete
+66564da92047: Download complete
+66564da92047: Pull complete
+bb0265c0d9a9: Pull complete
+b86dfbfbb035: Verifying Checksum
+b86dfbfbb035: Download complete
+b86dfbfbb035: Pull complete
+Digest: sha256:7f465d82a49e092b609fa97cea8ea761c9aa4fa6cab05f4876150e28bf16bcc3
+Status: Downloaded newer image for python:3.8.0-alpine
+ ---> 59acf2b3028c
+Step 2/14 : WORKDIR /usr/src/app
+ ---> Running in a1e0fc144e3d
+Removing intermediate container a1e0fc144e3d
+ ---> a804a09438b6
+Step 3/14 : ENV PYTHONDONTWRITEBYTECODE 1
+ ---> Running in 63b0ef77bff0
+Removing intermediate container 63b0ef77bff0
+ ---> ea246a248426
+Step 4/14 : ENV PYTHONUNBUFFERED 1
+ ---> Running in 200b3d11047e
+Removing intermediate container 200b3d11047e
+ ---> 3e5f550a0bf1
+Step 5/14 : RUN apk update     && apk add postgresql-dev libffi-dev gcc python3-dev musl-dev
+ ---> Running in 35383b7ab79b
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.10/community/x86_64/APKINDEX.tar.gz
+v3.10.9-43-g3feb769ea3 [http://dl-cdn.alpinelinux.org/alpine/v3.10/main]
+v3.10.6-10-ged79a86de3 [http://dl-cdn.alpinelinux.org/alpine/v3.10/community]
+OK: 10359 distinct packages available
+(1/26) Upgrading musl (1.1.22-r3 -> 1.1.22-r4)
+(2/26) Upgrading libcrypto1.1 (1.1.1d-r0 -> 1.1.1k-r0)
+(3/26) Upgrading libssl1.1 (1.1.1d-r0 -> 1.1.1k-r0)
+(4/26) Installing binutils (2.32-r1)
+(5/26) Installing gmp (6.1.2-r1)
+(6/26) Installing isl (0.18-r0)
+(7/26) Installing libgomp (8.3.0-r0)
+(8/26) Installing libatomic (8.3.0-r0)
+(9/26) Installing libgcc (8.3.0-r0)
+(10/26) Installing mpfr3 (3.1.5-r1)
+(11/26) Installing mpc1 (1.1.0-r0)
+(12/26) Installing libstdc++ (8.3.0-r0)
+(13/26) Installing gcc (8.3.0-r0)
+(14/26) Installing linux-headers (4.19.36-r0)
+(15/26) Installing pkgconf (1.6.1-r1)
+(16/26) Installing libffi-dev (3.2.1-r6)
+(17/26) Installing musl-dev (1.1.22-r4)
+(18/26) Installing openssl-dev (1.1.1k-r0)
+(19/26) Installing db (5.3.28-r1)
+(20/26) Installing libsasl (2.1.27-r4)
+(21/26) Installing libldap (2.4.48-r2)
+(22/26) Installing libpq (11.12-r0)
+(23/26) Installing postgresql-libs (11.12-r0)
+(24/26) Installing postgresql-dev (11.12-r0)
+(25/26) Installing python3 (3.7.10-r0)
+(26/26) Installing python3-dev (3.7.10-r0)
+Executing busybox-1.30.1-r2.trigger
+Executing ca-certificates-20190108-r0.trigger
+OK: 253 MiB in 58 packages
+Removing intermediate container 35383b7ab79b
+ ---> 4c5c807d97ec
+Step 6/14 : RUN apk add --update gcc libc-dev linux-headers && rm -rf /var/cache/apk/*
+ ---> Running in 12d1df76445c
+(1/1) Installing libc-dev (0.7.1-r0)
+OK: 253 MiB in 59 packages
+Removing intermediate container 12d1df76445c
+ ---> 7f1333e90c71
+Step 7/14 : RUN pip install --upgrade pip
+ ---> Running in cb15bd664651
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/1f/2c/d9626f045e7b49a6225c6b09257861f24da78f4e5f23af2ddbdf852c99b8/pip-22.2.2-py3-none-any.whl (2.0MB)
+Installing collected packages: pip
+  Found existing installation: pip 19.3.1
+    Uninstalling pip-19.3.1:
+      Successfully uninstalled pip-19.3.1
+Successfully installed pip-22.2.2
+Removing intermediate container cb15bd664651
+ ---> 95382debcb42
+Step 8/14 : COPY ./requirements.txt /usr/src/app/requirements.txt
+ ---> 3e3b75a97778
+Step 9/14 : RUN pip install -r requirements.txt
+ ---> Running in 7ce323cf406c
+Collecting PyJWT
+  Downloading PyJWT-2.5.0-py3-none-any.whl (20 kB)
+Collecting Django==2.2.6
+  Downloading Django-2.2.6-py3-none-any.whl (7.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.5/7.5 MB 49.3 MB/s eta 0:00:00
+Collecting gunicorn==19.9.0
+  Downloading gunicorn-19.9.0-py2.py3-none-any.whl (112 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 112.9/112.9 kB 5.5 MB/s eta 0:00:00
+Collecting psycopg2==2.8.6
+  Downloading psycopg2-2.8.6.tar.gz (383 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 383.8/383.8 kB 24.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting djangorestframework
+  Downloading djangorestframework-3.14.0-py3-none-any.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 69.0 MB/s eta 0:00:00
+Collecting markdown
+  Downloading Markdown-3.4.1-py3-none-any.whl (93 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.3/93.3 kB 6.7 MB/s eta 0:00:00
+Collecting django-filter
+  Downloading django_filter-22.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 kB 12.0 MB/s eta 0:00:00
+Collecting django-debug-toolbar
+  Downloading django_debug_toolbar-3.7.0-py3-none-any.whl (220 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 220.7/220.7 kB 17.5 MB/s eta 0:00:00
+Collecting fusionauth-client
+  Downloading fusionauth_client-1.36.0-py3-none-any.whl (29 kB)
+Collecting django-jet
+  Downloading django-jet-1.0.8.tar.gz (829 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 829.5/829.5 kB 53.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting sentry-sdk
+  Downloading sentry_sdk-1.9.9-py2.py3-none-any.whl (162 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.1/162.1 kB 22.4 MB/s eta 0:00:00
+Collecting google-cloud-storage
+  Downloading google_cloud_storage-2.5.0-py2.py3-none-any.whl (106 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.0/107.0 kB 19.6 MB/s eta 0:00:00
+Collecting pyfcm
+  Downloading pyfcm-1.5.4.tar.gz (17 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting django-elasticsearch-dsl
+  Downloading django_elasticsearch_dsl-7.2.2-py2.py3-none-any.whl (18 kB)
+Collecting python-logstash
+  Downloading python-logstash-0.4.8.tar.gz (7.1 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting python-logstash-async
+  Downloading python_logstash_async-2.5.0-py2.py3-none-any.whl (22 kB)
+Collecting python-memcached>=1.3
+  Downloading python_memcached-1.59-py2.py3-none-any.whl (16 kB)
+Collecting django-extensions
+  Downloading django_extensions-3.2.1-py3-none-any.whl (229 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.4/229.4 kB 24.3 MB/s eta 0:00:00
+Collecting cryptography==3.3.2
+  Downloading cryptography-3.3.2.tar.gz (539 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 539.9/539.9 kB 14.6 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting django-silk
+  Downloading django_silk-5.0.1-py3-none-any.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 57.0 MB/s eta 0:00:00
+Collecting channels
+  Downloading channels-3.0.5-py3-none-any.whl (38 kB)
+Collecting channels_redis
+  Downloading channels_redis-3.4.1-py3-none-any.whl (20 kB)
+Collecting django-cors-headers
+  Downloading django_cors_headers-3.13.0-py3-none-any.whl (13 kB)
+Collecting celery==4.4
+  Downloading celery-4.4.0-py2.py3-none-any.whl (421 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 422.0/422.0 kB 47.0 MB/s eta 0:00:00
+Collecting watchdog
+  Downloading watchdog-2.1.9.tar.gz (119 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.2/119.2 kB 19.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting psutil
+  Downloading psutil-5.9.2.tar.gz (479 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 479.8/479.8 kB 31.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting django-celery-results==2.0.1
+  Downloading django_celery_results-2.0.1-py2.py3-none-any.whl (23 kB)
+Collecting opentelemetry-api==1.0.0rc1
+  Downloading opentelemetry_api-1.0.0rc1-py3-none-any.whl (36 kB)
+Collecting opentelemetry-sdk==1.0.0rc1
+  Downloading opentelemetry_sdk-1.0.0rc1-py3-none-any.whl (35 kB)
+Collecting xmltodict
+  Downloading xmltodict-0.13.0-py2.py3-none-any.whl (10.0 kB)
+Collecting drf_yasg2
+  Downloading drf_yasg2-1.19.4-py3-none-any.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 40.8 MB/s eta 0:00:00
+Collecting python-dotenv
+  Downloading python_dotenv-0.21.0-py3-none-any.whl (18 kB)
+Collecting funcy
+  Downloading funcy-1.17-py2.py3-none-any.whl (33 kB)
+Collecting dj-static
+  Downloading dj-static-0.0.6.tar.gz (3.4 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting zstandard
+  Downloading zstandard-0.18.0.tar.gz (631 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 631.5/631.5 kB 34.2 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting django-redis
+  Downloading django_redis-5.2.0-py3-none-any.whl (30 kB)
+Collecting pyzstd
+  Downloading pyzstd-0.15.3-cp38-cp38-musllinux_1_1_x86_64.whl (393 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 393.3/393.3 kB 38.7 MB/s eta 0:00:00
+Collecting sqlparse
+  Downloading sqlparse-0.4.3-py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.8/42.8 kB 6.4 MB/s eta 0:00:00
+Collecting pytz
+  Downloading pytz-2022.4-py2.py3-none-any.whl (500 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 500.8/500.8 kB 46.2 MB/s eta 0:00:00
+Collecting cffi>=1.12
+  Using cached cffi-1.15.1-cp38-cp38-linux_x86_64.whl
+Collecting six>=1.4.1
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting vine==1.3.0
+  Downloading vine-1.3.0-py2.py3-none-any.whl (14 kB)
+Collecting kombu<4.7,>=4.6.7
+  Downloading kombu-4.6.11-py2.py3-none-any.whl (184 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.4/184.4 kB 6.3 MB/s eta 0:00:00
+Collecting billiard<4.0,>=3.6.1
+  Downloading billiard-3.6.4.0-py3-none-any.whl (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.5/89.5 kB 4.2 MB/s eta 0:00:00
+Collecting djangorestframework
+  Downloading djangorestframework-3.13.1-py3-none-any.whl (958 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 958.3/958.3 kB 33.0 MB/s eta 0:00:00
+Collecting importlib-metadata>=4.4
+  Downloading importlib_metadata-5.0.0-py3-none-any.whl (21 kB)
+Collecting django-filter
+  Downloading django_filter-21.1-py3-none-any.whl (81 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.4/81.4 kB 10.4 MB/s eta 0:00:00
+Collecting django-debug-toolbar
+  Downloading django_debug_toolbar-3.6.0-py3-none-any.whl (220 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 220.2/220.2 kB 22.6 MB/s eta 0:00:00
+  Downloading django_debug_toolbar-3.5.0-py3-none-any.whl (220 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 220.1/220.1 kB 26.8 MB/s eta 0:00:00
+  Downloading django_debug_toolbar-3.4.0-py3-none-any.whl (218 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 218.4/218.4 kB 28.1 MB/s eta 0:00:00
+  Downloading django_debug_toolbar-3.3.0-py3-none-any.whl (218 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 218.2/218.2 kB 26.7 MB/s eta 0:00:00
+  Downloading django_debug_toolbar-3.2.4-py3-none-any.whl (216 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 216.6/216.6 kB 22.0 MB/s eta 0:00:00
+Collecting requests
+  Downloading requests-2.28.1-py3-none-any.whl (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 4.6 MB/s eta 0:00:00
+Collecting deprecated
+  Downloading Deprecated-1.2.13-py2.py3-none-any.whl (9.6 kB)
+Collecting urllib3>=1.26.11
+  Downloading urllib3-1.26.12-py2.py3-none-any.whl (140 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.4/140.4 kB 19.8 MB/s eta 0:00:00
+Collecting certifi
+  Downloading certifi-2022.9.24-py3-none-any.whl (161 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.1/161.1 kB 18.6 MB/s eta 0:00:00
+Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5
+  Downloading google_api_core-2.10.1-py3-none-any.whl (115 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.5/115.5 kB 9.2 MB/s eta 0:00:00
+Collecting google-auth<3.0dev,>=1.25.0
+  Downloading google_auth-2.12.0-py2.py3-none-any.whl (169 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 169.8/169.8 kB 10.3 MB/s eta 0:00:00
+Collecting google-resumable-media>=2.3.2
+  Downloading google_resumable_media-2.4.0-py2.py3-none-any.whl (77 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.4/77.4 kB 12.6 MB/s eta 0:00:00
+Collecting google-cloud-core<3.0dev,>=2.3.0
+  Downloading google_cloud_core-2.3.2-py2.py3-none-any.whl (29 kB)
+Collecting elasticsearch-dsl>=7.2.0<8.0.0
+  Downloading elasticsearch_dsl-7.4.0-py2.py3-none-any.whl (63 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.7/63.7 kB 10.3 MB/s eta 0:00:00
+Collecting pylogbeat
+  Downloading pylogbeat-2.0.0-py2.py3-none-any.whl (10 kB)
+Collecting limits
+  Downloading limits-2.7.0-py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.1/41.1 kB 1.9 MB/s eta 0:00:00
+Collecting django-extensions
+  Downloading django_extensions-3.2.0-py3-none-any.whl (229 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.1/229.1 kB 21.5 MB/s eta 0:00:00
+  Downloading django_extensions-3.1.5-py3-none-any.whl (224 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.2/224.2 kB 7.8 MB/s eta 0:00:00
+Collecting Jinja2
+  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 9.3 MB/s eta 0:00:00
+Collecting gprof2dot>=2017.09.19
+  Downloading gprof2dot-2022.7.29-py2.py3-none-any.whl (34 kB)
+Collecting django-silk
+  Downloading django_silk-5.0.0-py3-none-any.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 50.1 MB/s eta 0:00:00
+  Downloading django_silk-4.4.1-py3-none-any.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 48.3 MB/s eta 0:00:00
+Collecting python-dateutil
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 30.2 MB/s eta 0:00:00
+Collecting autopep8
+  Downloading autopep8-1.7.0-py2.py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 3.0 MB/s eta 0:00:00
+Collecting asgiref<4,>=3.5.0
+  Downloading asgiref-3.5.2-py3-none-any.whl (22 kB)
+Collecting daphne<4,>=3.0
+  Downloading daphne-3.0.2-py3-none-any.whl (26 kB)
+Collecting aioredis~=1.0
+  Downloading aioredis-1.3.1-py3-none-any.whl (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.3/65.3 kB 8.7 MB/s eta 0:00:00
+Collecting msgpack~=1.0
+  Downloading msgpack-1.0.4-cp38-cp38-musllinux_1_1_x86_64.whl (329 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 329.7/329.7 kB 34.4 MB/s eta 0:00:00
+Collecting django-cors-headers
+  Downloading django_cors_headers-3.12.0-py3-none-any.whl (13 kB)
+  Downloading django_cors_headers-3.11.0-py3-none-any.whl (12 kB)
+Collecting coreschema>=0.0.4
+  Downloading coreschema-0.0.4.tar.gz (10 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting inflection>=0.3.1
+  Downloading inflection-0.5.1-py2.py3-none-any.whl (9.5 kB)
+Collecting uritemplate>=3.0.1
+  Downloading uritemplate-4.1.1-py2.py3-none-any.whl (10 kB)
+Collecting coreapi>=2.3.3
+  Downloading coreapi-2.3.3-py2.py3-none-any.whl (25 kB)
+Collecting ruamel.yaml>=0.16.12
+  Downloading ruamel.yaml-0.17.21-py3-none-any.whl (109 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.5/109.5 kB 5.7 MB/s eta 0:00:00
+Collecting packaging>=18.0
+  Downloading packaging-21.3-py3-none-any.whl (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.8/40.8 kB 3.4 MB/s eta 0:00:00
+Collecting static3
+  Downloading static3-0.7.0.tar.gz (24 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting redis!=4.0.0,!=4.0.1,>=3
+  Downloading redis-4.3.4-py3-none-any.whl (246 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 246.2/246.2 kB 5.7 MB/s eta 0:00:00
+Collecting hiredis
+  Downloading hiredis-2.0.0.tar.gz (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.8/75.8 kB 11.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting async-timeout
+  Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Collecting pycparser
+  Using cached pycparser-2.21-py2.py3-none-any.whl (118 kB)
+Collecting itypes
+  Downloading itypes-1.2.0-py2.py3-none-any.whl (4.8 kB)
+Collecting twisted[tls]>=18.7
+  Downloading Twisted-22.8.0-py3-none-any.whl (3.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 51.9 MB/s eta 0:00:00
+Collecting autobahn>=0.18
+  Downloading autobahn-22.7.1.tar.gz (476 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 476.8/476.8 kB 46.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting elasticsearch<8.0.0,>=7.0.0
+  Downloading elasticsearch-7.17.6-py2.py3-none-any.whl (385 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.8/385.8 kB 28.9 MB/s eta 0:00:00
+Collecting googleapis-common-protos<2.0dev,>=1.56.2
+  Downloading googleapis_common_protos-1.56.4-py2.py3-none-any.whl (211 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 211.7/211.7 kB 27.2 MB/s eta 0:00:00
+Collecting protobuf<5.0.0dev,>=3.20.1
+  Downloading protobuf-4.21.7-py3-none-any.whl (291 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 291.6/291.6 kB 23.7 MB/s eta 0:00:00
+Collecting cachetools<6.0,>=2.0.0
+  Downloading cachetools-5.2.0-py3-none-any.whl (9.3 kB)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 kB 11.2 MB/s eta 0:00:00
+Collecting rsa<5,>=3.1.4
+  Downloading rsa-4.9-py3-none-any.whl (34 kB)
+Collecting google-crc32c<2.0dev,>=1.0
+  Downloading google_crc32c-1.5.0-cp38-cp38-musllinux_1_1_x86_64.whl (581 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 581.7/581.7 kB 27.6 MB/s eta 0:00:00
+Collecting zipp>=0.5
+  Downloading zipp-3.8.1-py3-none-any.whl (5.6 kB)
+Collecting amqp<2.7,>=2.6.0
+  Downloading amqp-2.6.1-py2.py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.0/48.0 kB 7.6 MB/s eta 0:00:00
+Collecting pyparsing!=3.0.5,>=2.0.2
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 kB 18.1 MB/s eta 0:00:00
+Collecting wrapt<2,>=1.10
+  Downloading wrapt-1.14.1-cp38-cp38-musllinux_1_1_x86_64.whl (85 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.5/85.5 kB 12.8 MB/s eta 0:00:00
+Collecting idna<4,>=2.5
+  Downloading idna-3.4-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 kB 9.7 MB/s eta 0:00:00
+Collecting charset-normalizer<3,>=2
+  Downloading charset_normalizer-2.1.1-py3-none-any.whl (39 kB)
+Collecting ruamel.yaml.clib>=0.2.6
+  Downloading ruamel.yaml.clib-0.2.6.tar.gz (180 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 180.7/180.7 kB 31.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting toml
+  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting pycodestyle>=2.9.1
+  Downloading pycodestyle-2.9.1-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.5/41.5 kB 5.0 MB/s eta 0:00:00
+Collecting MarkupSafe>=2.0
+  Downloading MarkupSafe-2.1.1-cp38-cp38-musllinux_1_1_x86_64.whl (29 kB)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.8/site-packages (from limits->python-logstash-async->-r requirements.txt (line 16)) (41.6.0)
+Collecting typing-extensions
+  Downloading typing_extensions-4.3.0-py3-none-any.whl (25 kB)
+Collecting txaio>=21.2.1
+  Downloading txaio-22.2.1-py2.py3-none-any.whl (30 kB)
+Collecting autobahn>=0.18
+  Downloading autobahn-22.6.1.tar.gz (467 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 467.4/467.4 kB 46.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-22.5.1.tar.gz (435 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 435.6/435.6 kB 28.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-22.4.2.tar.gz (396 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 396.1/396.1 kB 19.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-22.4.1.tar.gz (395 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 395.8/395.8 kB 8.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-22.3.2.tar.gz (376 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 376.0/376.0 kB 19.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-22.3.1.tar.gz (375 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 375.6/375.6 kB 27.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-22.2.2.tar.gz (375 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 375.4/375.4 kB 43.7 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-22.2.1.tar.gz (375 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 375.4/375.4 kB 27.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-22.1.1.tar.gz (365 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 365.8/365.8 kB 29.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-21.11.1.tar.gz (365 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 365.2/365.2 kB 27.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading autobahn-21.3.1-py2.py3-none-any.whl (495 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 495.8/495.8 kB 26.8 MB/s eta 0:00:00
+  Downloading autobahn-21.2.2-py2.py3-none-any.whl (495 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 495.2/495.2 kB 21.9 MB/s eta 0:00:00
+  Downloading autobahn-21.2.1-py2.py3-none-any.whl (486 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 486.4/486.4 kB 31.2 MB/s eta 0:00:00
+Collecting hyperlink>=20.0.1
+  Downloading hyperlink-21.0.0-py2.py3-none-any.whl (74 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.6/74.6 kB 8.9 MB/s eta 0:00:00
+Collecting pyasn1<0.5.0,>=0.4.6
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.1/77.1 kB 10.0 MB/s eta 0:00:00
+Collecting Automat>=0.8.0
+  Downloading Automat-20.2.0-py2.py3-none-any.whl (31 kB)
+Collecting constantly>=15.1
+  Downloading constantly-15.1.0-py2.py3-none-any.whl (7.9 kB)
+Collecting attrs>=19.2.0
+  Downloading attrs-22.1.0-py2.py3-none-any.whl (58 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 kB 7.2 MB/s eta 0:00:00
+Collecting zope.interface>=4.4.2
+  Downloading zope.interface-5.4.0.tar.gz (249 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 249.3/249.3 kB 29.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting incremental>=21.3.0
+  Downloading incremental-21.3.0-py2.py3-none-any.whl (15 kB)
+Collecting service-identity>=18.1.0
+  Downloading service_identity-21.1.0-py2.py3-none-any.whl (12 kB)
+Collecting pyopenssl>=21.0.0
+  Downloading pyOpenSSL-22.1.0-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.0/57.0 kB 8.9 MB/s eta 0:00:00
+  Downloading pyOpenSSL-22.0.0-py2.py3-none-any.whl (55 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 kB 7.1 MB/s eta 0:00:00
+  Downloading pyOpenSSL-21.0.0-py2.py3-none-any.whl (55 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.1/55.1 kB 5.5 MB/s eta 0:00:00
+Building wheels for collected packages: psycopg2, cryptography, django-jet, pyfcm, python-logstash, watchdog, psutil, dj-static, zstandard, coreschema, static3, ruamel.yaml.clib, hiredis, zope.interface
+  Building wheel for psycopg2 (setup.py): started
+  Building wheel for psycopg2 (setup.py): finished with status 'done'
+  Created wheel for psycopg2: filename=psycopg2-2.8.6-cp38-cp38-linux_x86_64.whl size=491228 sha256=e348d02a897f66797bf6fc4fbe18fbdb0161126514632f1bf44f8c91dcf80132
+  Stored in directory: /root/.cache/pip/wheels/70/5e/69/8a020d78c09043156a7df0b64529e460fbd922ca065c4b795c
+  Building wheel for cryptography (pyproject.toml): started
+  Building wheel for cryptography (pyproject.toml): finished with status 'done'
+  Created wheel for cryptography: filename=cryptography-3.3.2-cp38-cp38-linux_x86_64.whl size=1083106 sha256=305726ea309a6db7e3a3a802f66b167ca45a732486eb10aec945fb3af2b25bb5
+  Stored in directory: /root/.cache/pip/wheels/be/78/4a/8369e36abca13e612acbb8588a6df07ebe8dc7a62f2c5ca2f1
+  Building wheel for django-jet (setup.py): started
+  Building wheel for django-jet (setup.py): finished with status 'done'
+  Created wheel for django-jet: filename=django_jet-1.0.8-py3-none-any.whl size=1079337 sha256=1edf85a843a987512612e87c1896000a63c02872121877f6a90afe8bdbee72dc
+  Stored in directory: /root/.cache/pip/wheels/62/68/e9/fc958c2c509a9917ca9687273347ad2c220921d5b4c37c168c
+  Building wheel for pyfcm (setup.py): started
+  Building wheel for pyfcm (setup.py): finished with status 'done'
+  Created wheel for pyfcm: filename=pyfcm-1.5.4-py3-none-any.whl size=15028 sha256=dd579d7fe5f05f1874a3e7163d3d6c703f8b592b79b1c38fa0c5bfd7516f5d93
+  Stored in directory: /root/.cache/pip/wheels/98/b5/a5/93312410d99262599bbac84c369566048b7150f20b5dd27912
+  Building wheel for python-logstash (setup.py): started
+  Building wheel for python-logstash (setup.py): finished with status 'done'
+  Created wheel for python-logstash: filename=python_logstash-0.4.8-py3-none-any.whl size=8414 sha256=1487028c1d46145a624f9635b68cc8a668519d0b749d300aabb4880ca49e290c
+  Stored in directory: /root/.cache/pip/wheels/eb/e4/85/edb12495360894b52ab9161f28d348250b41095ee4a322c16e
+  Building wheel for watchdog (setup.py): started
+  Building wheel for watchdog (setup.py): finished with status 'done'
+  Created wheel for watchdog: filename=watchdog-2.1.9-py3-none-any.whl size=78378 sha256=639ff0d783b30923116b9ced0aaad9d99a681389f03a37fa6e18da94c856d53e
+  Stored in directory: /root/.cache/pip/wheels/c5/27/7c/383661da074daa5cdb0ccd2140fffe3c8e40f6ac7312373f93
+  Building wheel for psutil (setup.py): started
+  Building wheel for psutil (setup.py): finished with status 'done'
+  Created wheel for psutil: filename=psutil-5.9.2-cp38-cp38-linux_x86_64.whl size=287500 sha256=54f04f36b44497b18d0359b50cf29335e41796faaec492eae5aad869643809ac
+  Stored in directory: /root/.cache/pip/wheels/c3/d9/d7/b55aee405934fcc854a0d75456d1116bd4a848bdda0a07df46
+  Building wheel for dj-static (setup.py): started
+  Building wheel for dj-static (setup.py): finished with status 'done'
+  Created wheel for dj-static: filename=dj_static-0.0.6-py3-none-any.whl size=3053 sha256=474da914a7c03f2bd0c8b21cb364379b1251fbabd088fc2b2b1c5c906dd01841
+  Stored in directory: /root/.cache/pip/wheels/82/94/3a/b7d24d89117ff6597d9a09fd998747e3e04463267448ab734d
+  Building wheel for zstandard (pyproject.toml): started
+  Building wheel for zstandard (pyproject.toml): finished with status 'done'
+  Created wheel for zstandard: filename=zstandard-0.18.0-cp38-cp38-linux_x86_64.whl size=2175497 sha256=5b8fe266410335b1a05b44b5853664748a141707bfa4abc4e9f36423d9be7571
+  Stored in directory: /root/.cache/pip/wheels/2b/0d/c0/06ba3d63404671ff2e5cecfc440eaf908babfc7f8a554e1d79
+  Building wheel for coreschema (setup.py): started
+  Building wheel for coreschema (setup.py): finished with status 'done'
+  Created wheel for coreschema: filename=coreschema-0.0.4-py3-none-any.whl size=15032 sha256=6e78c3d530cdcc9932890bbff68ed25a7d171265bf8aeea87e8ee342f9334108
+  Stored in directory: /root/.cache/pip/wheels/37/21/45/2ce3dd0189e3d2fb7a325b9d3e6491acb7882c8275466d5401
+  Building wheel for static3 (setup.py): started
+  Building wheel for static3 (setup.py): finished with status 'done'
+  Created wheel for static3: filename=static3-0.7.0-py3-none-any.whl size=18605 sha256=7c0bd9abd46860e5d3126a4c8589340fb2ec56ebbe2c65193f08de247543adc7
+  Stored in directory: /root/.cache/pip/wheels/02/05/34/4a2c473285afc98d215274b511a7a72bc2ee947c897cf21638
+  Building wheel for ruamel.yaml.clib (setup.py): started
+  Building wheel for ruamel.yaml.clib (setup.py): finished with status 'done'
+  Created wheel for ruamel.yaml.clib: filename=ruamel.yaml.clib-0.2.6-cp38-cp38-linux_x86_64.whl size=677774 sha256=ddeff1e3f4146a9cf62e9c7c81418a89a429e8c6184792ba2ec3b82f19835d80
+  Stored in directory: /root/.cache/pip/wheels/17/0a/cb/8df6ed5547555605ad0f025f670be83ff322b3cfb5982e9427
+  Building wheel for hiredis (setup.py): started
+  Building wheel for hiredis (setup.py): finished with status 'done'
+  Created wheel for hiredis: filename=hiredis-2.0.0-cp38-cp38-linux_x86_64.whl size=82941 sha256=3691450fab3c76347026d37a91c551150d8f512e4ebd52a849bdfe91a1d87d5f
+  Stored in directory: /root/.cache/pip/wheels/40/f9/92/4f916d7efad1897f2921f8694fa654619198da80ad6afc7996
+  Building wheel for zope.interface (setup.py): started
+  Building wheel for zope.interface (setup.py): finished with status 'done'
+  Created wheel for zope.interface: filename=zope.interface-5.4.0-cp38-cp38-linux_x86_64.whl size=258494 sha256=6e3c10541a09c285a28d059255d1e3e6102c04369aacab7545cae59849d705a4
+  Stored in directory: /root/.cache/pip/wheels/f6/d5/8a/522a527f3831d7baa52a67b0d6f45c5872aad25058e4a34b16
+Successfully built psycopg2 cryptography django-jet pyfcm python-logstash watchdog psutil dj-static zstandard coreschema static3 ruamel.yaml.clib hiredis zope.interface
+Installing collected packages: static3, pytz, python-logstash, pyasn1, msgpack, itypes, incremental, funcy, constantly, billiard, zstandard, zope.interface, zipp, xmltodict, wrapt, watchdog, vine, urllib3, uritemplate, typing-extensions, txaio, toml, sqlparse, six, ruamel.yaml.clib, rsa, pyzstd, python-dotenv, pyparsing, pylogbeat, PyJWT, pycparser, pycodestyle, pyasn1-modules, psycopg2, psutil, protobuf, opentelemetry-api, MarkupSafe, inflection, idna, hiredis, gunicorn, gprof2dot, google-crc32c, dj-static, charset-normalizer, certifi, cachetools, attrs, async-timeout, asgiref, sentry-sdk, ruamel.yaml, requests, python-memcached, python-dateutil, packaging, opentelemetry-sdk, Jinja2, importlib-metadata, hyperlink, googleapis-common-protos, google-resumable-media, google-auth, elasticsearch, Django, deprecated, cffi, autopep8, Automat, amqp, aioredis, twisted, redis, pyfcm, markdown, limits, kombu, google-api-core, fusionauth-client, elasticsearch-dsl, djangorestframework, django-silk, django-jet, django-filter, django-extensions, django-debug-toolbar, django-cors-headers, cryptography, coreschema, service-identity, python-logstash-async, pyopenssl, google-cloud-core, django-redis, django-elasticsearch-dsl, coreapi, celery, autobahn, google-cloud-storage, drf_yasg2, django-celery-results, daphne, channels, channels_redis
+Successfully installed Automat-20.2.0 Django-2.2.6 Jinja2-3.1.2 MarkupSafe-2.1.1 PyJWT-2.5.0 aioredis-1.3.1 amqp-2.6.1 asgiref-3.5.2 async-timeout-4.0.2 attrs-22.1.0 autobahn-21.2.1 autopep8-1.7.0 billiard-3.6.4.0 cachetools-5.2.0 celery-4.4.0 certifi-2022.9.24 cffi-1.15.1 channels-3.0.5 channels_redis-3.4.1 charset-normalizer-2.1.1 constantly-15.1.0 coreapi-2.3.3 coreschema-0.0.4 cryptography-3.3.2 daphne-3.0.2 deprecated-1.2.13 dj-static-0.0.6 django-celery-results-2.0.1 django-cors-headers-3.11.0 django-debug-toolbar-3.2.4 django-elasticsearch-dsl-7.2.2 django-extensions-3.1.5 django-filter-21.1 django-jet-1.0.8 django-redis-5.2.0 django-silk-4.4.1 djangorestframework-3.13.1 drf_yasg2-1.19.4 elasticsearch-7.17.6 elasticsearch-dsl-7.4.0 funcy-1.17 fusionauth-client-1.36.0 google-api-core-2.10.1 google-auth-2.12.0 google-cloud-core-2.3.2 google-cloud-storage-2.5.0 google-crc32c-1.5.0 google-resumable-media-2.4.0 googleapis-common-protos-1.56.4 gprof2dot-2022.7.29 gunicorn-19.9.0 hiredis-2.0.0 hyperlink-21.0.0 idna-3.4 importlib-metadata-5.0.0 incremental-21.3.0 inflection-0.5.1 itypes-1.2.0 kombu-4.6.11 limits-2.7.0 markdown-3.4.1 msgpack-1.0.4 opentelemetry-api-1.0.0rc1 opentelemetry-sdk-1.0.0rc1 packaging-21.3 protobuf-4.21.7 psutil-5.9.2 psycopg2-2.8.6 pyasn1-0.4.8 pyasn1-modules-0.2.8 pycodestyle-2.9.1 pycparser-2.21 pyfcm-1.5.4 pylogbeat-2.0.0 pyopenssl-21.0.0 pyparsing-3.0.9 python-dateutil-2.8.2 python-dotenv-0.21.0 python-logstash-0.4.8 python-logstash-async-2.5.0 python-memcached-1.59 pytz-2022.4 pyzstd-0.15.3 redis-4.3.4 requests-2.28.1 rsa-4.9 ruamel.yaml-0.17.21 ruamel.yaml.clib-0.2.6 sentry-sdk-1.9.9 service-identity-21.1.0 six-1.16.0 sqlparse-0.4.3 static3-0.7.0 toml-0.10.2 twisted-22.8.0 txaio-22.2.1 typing-extensions-4.3.0 uritemplate-4.1.1 urllib3-1.26.12 vine-1.3.0 watchdog-2.1.9 wrapt-1.14.1 xmltodict-0.13.0 zipp-3.8.1 zope.interface-5.4.0 zstandard-0.18.0
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0mRemoving intermediate container 7ce323cf406c
+ ---> f792510a6a50
+Step 10/14 : COPY ./wait-for /bin/wait-for
+ ---> 89e2d8963f6e
+Step 11/14 : RUN ["chmod", "+x", "/bin/wait-for"]
+ ---> Running in 3ff3e15adb5e
+Removing intermediate container 3ff3e15adb5e
+ ---> b024ed9e2cd0
+Step 12/14 : COPY ./entrypoint.sh /usr/src/app/entrypoint.sh
+ ---> d9d15b2f6518
+Step 13/14 : COPY . /usr/src/app/
+ ---> 8dbc479b5157
+Step 14/14 : ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+ ---> Running in 9b77b5712374
+Removing intermediate container 9b77b5712374
+ ---> b2a954c155e3
+Successfully built b2a954c155e3
+Successfully tagged localhost:5000/samarth-esamwad-backend-service:web_4b3a06a_7
+[8mha:////4BSWqHkWmcmNEQ2FBvJsyqHCDnhsXFsemD7J5gF4iTH+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQGOY4V7vgAAAA==[0m[Pipeline] }
+[8mha:////4Aeq9Lzdz0HXja1m16aFaBYrHfbwCCuCcoaQt1He4jgTAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJAokRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g3N4dT9vgAAAA==[0m[Pipeline] // stage
+[8mha:////4DXXnYl5CmmN8dWkAdJi4sZlDAt0RL4x6x29ftCTL5MxAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJBqEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKDa7z7F8A361JXbBAAAA[0m[Pipeline] stage
+[8mha:////4C5jZi6G/v0FcENiz9uJ9JblQlCSKTzBAm6PojDvnWrJAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] { (docker-push)
+[8mha:////4KVQOSjntoxtL7M7nRWH3W4TQi67MoZ0mRt/o77zWj/JAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQo99tP7cIbaOP4NL4AAAA=[0m[Pipeline] sh
++ docker push localhost:5000/samarth-esamwad-backend-service:web_4b3a06a_7
+The push refers to repository [localhost:5000/samarth-esamwad-backend-service]
+1d7a94991979: Preparing
+57e425b07803: Preparing
+77e0513456c4: Preparing
+ee109939566d: Preparing
+34706af2230c: Preparing
+f95523b1fda2: Preparing
+465e39483e1a: Preparing
+52107d9520ba: Preparing
+e7e4ac8c308c: Preparing
+ed3bcdc52baf: Preparing
+609efbb4f02d: Preparing
+21c8a084cb74: Preparing
+a6faf3350bb2: Preparing
+dcd185b843c6: Preparing
+77cae8ab23bf: Preparing
+f95523b1fda2: Waiting
+465e39483e1a: Waiting
+52107d9520ba: Waiting
+ed3bcdc52baf: Waiting
+e7e4ac8c308c: Waiting
+609efbb4f02d: Waiting
+21c8a084cb74: Waiting
+a6faf3350bb2: Waiting
+dcd185b843c6: Waiting
+77cae8ab23bf: Waiting
+77e0513456c4: Pushed
+ee109939566d: Pushed
+57e425b07803: Pushed
+f95523b1fda2: Pushed
+52107d9520ba: Pushed
+ed3bcdc52baf: Pushed
+465e39483e1a: Pushed
+21c8a084cb74: Pushed
+609efbb4f02d: Pushed
+dcd185b843c6: Pushed
+1d7a94991979: Pushed
+77cae8ab23bf: Pushed
+a6faf3350bb2: Pushed
+34706af2230c: Pushed
+e7e4ac8c308c: Pushed
+web_4b3a06a_7: digest: sha256:4d2fa14a969aff91a16d959ddabe838718790d0372cdcccda455e4cc6d464ec4 size: 3459
++ docker rmi -f localhost:5000/samarth-esamwad-backend-service:web_4b3a06a_7
+Untagged: localhost:5000/samarth-esamwad-backend-service:web_4b3a06a_7
+Untagged: localhost:5000/samarth-esamwad-backend-service@sha256:4d2fa14a969aff91a16d959ddabe838718790d0372cdcccda455e4cc6d464ec4
+Deleted: sha256:b2a954c155e3ed1d9b081cf05725e742f47e5a2043518bf1a3d186c6d89bb152
+Deleted: sha256:8dbc479b51574fa60b3b0d2978b605bc4ddbe6bb7bc3a533d029ceb8cf471818
+Deleted: sha256:3796f6a25a27c88960fee8c0f55ff997b40aa37fea302909e909da7a32f8f98f
+Deleted: sha256:d9d15b2f65181b6257da2138a89bd4d964d017f68184187db2a3408d18aa52cf
+Deleted: sha256:a3f0c67dcf3c7a652366caafce7f1cc671a48df1089fb0fbc3206711c6e573e8
+Deleted: sha256:b024ed9e2cd08313d11da6ddbcfa2180a6cdeb77dfbc60ba83b8d68b8c966b50
+Deleted: sha256:f74dc86e077fa6755e9a768fb3f8870ca1bf999f65d0334ea673133928d947f4
+Deleted: sha256:89e2d8963f6e57aa118f924087270638d84107bf91c450efb6f23ebf8f8d4114
+Deleted: sha256:11d13478a1f715aa87013c4c6c28ef4dc19fbfc67a3275635964e79220288b2c
+Deleted: sha256:f792510a6a50b05a978830605109aacb5a96f85890f5c632750881572b216a25
+Deleted: sha256:887b862cb19dc4481000c5188cecced24034886a360d65d330091d3826db5fc4
+Deleted: sha256:3e3b75a97778fd6c4f755226bba11158d404607d278bc8b9816ad89aca65425f
+Deleted: sha256:c70984cdfc29de3854831396d051bb2a21439092c45fd419b38a3bcba2d45d44
+Deleted: sha256:95382debcb42bdb64c50061f9a18b8d4ac5693396f3ccde5887754e79e8de23a
+Deleted: sha256:52b5b97f038f13cc5c028df5e3494362738ce19bf65ccf02422848504db8085d
+Deleted: sha256:7f1333e90c711434a7b79b9ed7bcc41a2e59caf63d2c2b7dc6d51663ec791da1
+Deleted: sha256:7da5259bca1c39d15ab2dd13108335f8d825e4188e2b5b4ac90584c700237ea4
+Deleted: sha256:4c5c807d97ecb62488c9dbbb5f91251a2bdfc3b43b528b7991fc0c8c12c0e20c
+Deleted: sha256:c85b02540e5b5ca2a4c89a1951f901357c0e93c5f75b9729cd3dc04567103b31
+Deleted: sha256:3e5f550a0bf1716d91dd7edc13e7780fc461d308db01e5177cc11b831ac44b5c
+Deleted: sha256:ea246a248426b1aba1925f843824e7ebc601ccc31a1e9fed4ebb40be8838e89b
+Deleted: sha256:a804a09438b6298ef192d49a5ce31d03e11cf061d91c6a4de84be2f6ac82b946
+Deleted: sha256:4d7e07555bede2450b12141439ad4db7052549f397aa988aa4c6424e1e804d92
+[8mha:////4F5BAJwKw+pITEUaH3jVPZRFb/+m7035jKt/7oPgJbaqAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKC0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJu8TlHX9qf0b7E/nQb4AAAA=[0m[Pipeline] }
+[8mha:////4GDTzikJGMW/wxE5wNb3FH3iVMFMFsarzCK2mOWNNb3VAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AEud0rYvgAAAA==[0m[Pipeline] // stage
+[8mha:////4EIMgT9lqd6Fml+nHnbwwdA+DX6hHd/hf7d3PG+uL9czAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjoXSIitZywwtMYowT6y7YF5KKF/E1/oAhEhVb7ay0mucLyhThQNHJzmLvMTVeDmF0ucmJYn8JNMmOzrIhTBSs1HbS1NrjgprYwhJRwErB2mITKHl0DBvVmbupgkFXnTjmba+g8O0NHiBUNrOJ/IU5wvY6tonw5/krgHlgEDVDsas/x/INPbxT+8EAAAA=[0m[Pipeline] stage
+[8mha:////4L23994GNIKQtd2ZqPCweuNAkIHygzrRJcRJri2KPF+iAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] { (ArchiveArtifacts)
+[8mha:////4K9OS4xHuR6UMEPGPJVVe/8eihy4CMFhN0zh3XIS4UnqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEIWoEpvgAAAA==[0m[Pipeline] sh
++ echo web_4b3a06a_7
+[8mha:////4AEKvhnmZHTZeXkOrWIToMdMrFJa+JOlAJO0xNC0dWo5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q1Ja5owvgAAAA==[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4D5vH6Et1sk7gQVGM6VvrQAWFLLBgxLkBoAp14j20ZJGAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEhIaq0lhteYGJjnFh3xnZIKl7E1/gDgUhUbLHa2WaeL1imCEeOFltDnaPUOAy+t9PCgWN38Txgy2dsmBJ7g9IMkrWpZ5ScDcwpSlgIWBlqPCdHNsNatOquKq/IVqccp+8goHT6Bg8oxGTOKuYvjBE2114npp/nrwDGEDKU2/2ndm8FmBaQvgAAAA==[0m[Pipeline] }
+[8mha:////4NX2R0THZJ85FPBltFOfPApyJ+wl9YzWl6RQWrgamRKgAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIRqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQE2e00svgAAAA==[0m[Pipeline] // stage
+[8mha:////4IU8tmeYMDt8znleiR99vwqLLNirAMCSnGdbBkJIeGIuAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBgg5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8BjoqNn70AAAA=[0m[Pipeline] }
+[8mha:////4I8Jfu6gMA1Y9gE3G6bazRDfN/nBCcNWGArQZHQBLDDhAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6LEMBon14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfk5V6QlR+dNok8vQAAAA==[0m[Pipeline] // node
+[8mha:////4HePNMegEDkHS6ohUtzRisqfYWc+fLKZiZwzpvcO0BQVAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkOBon14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfk+1KQlR/bfC4MvQAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS
