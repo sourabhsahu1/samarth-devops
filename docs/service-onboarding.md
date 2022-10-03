@@ -1,0 +1,19 @@
+# Steps to on-board a new service
+
+### Pre-requisites
+
+- First setup jenkins using `jenkins-setup.md`
+- Each service should have a `Dockerfile`, `Jenkinsfile` present. Jenkins file is very generic and one can use the given `Jenkinsfile` in the root folder of this repo.
+
+### Steps for build
+
+- Now go to build folder and create a new item. Copy an existing build job for this new item.
+- Configure the newly created job and modify the paths of `Dockerfile`, `Jenkins`, `Git Repo` according to your repository structure.
+- Test a build by clicking build now
+
+### Steps for deploy
+
+- Now go to deploy folder and create a new item. Copy an existing deploy job for this new item.
+- Go to `ansible_workspace_dir` and add a new tag and respective roles for the new service. You can use the structure of existing roles to add a new service.
+- Update the Nginx conf file to expose your services on the local host from the docker swarm. 
+
