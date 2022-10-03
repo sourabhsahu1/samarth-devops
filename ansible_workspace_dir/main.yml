@@ -6,16 +6,8 @@
   vars_files:
     - "vars/main.yml"
   roles:
-    - role: deploy-web-service
-      tags: [deploy-web-service]
-    - role: deploy-form-service
-      tags: [deploy-form-service]
-    - role: deploy-user-service
-      tags: [deploy-user-service]
-    - role: deploy-gateway-service
-      tags: [deploy-gateway-service]
-    - role: deploy-analytics-service
-      tags: [deploy-analytics-service]
+    - role: sample-deploy-web-service
+      tags: [sample-deploy-web-service]
     - role: stack-proxy
       tags: [stack-proxy]
     - role: deploy-esamwad-backend

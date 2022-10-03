@@ -69,10 +69,6 @@ service_mem_reserved_web_service: "{{ memory_m }}"
 service_mem_limit_web_service: "{{ memory_l }}"
 force_reload_esmawad-backend_service: true
 
-form_logs_path: /mydata/logs/form
-gateway_logs_path: /mydata/logs/gateway
-web_logs_path: /mydata/logs/web
-user_logs_path: /mydata/logs/user
 esamwad_backend_logs: /mydata/logs/backend
 
 publish_ports: false

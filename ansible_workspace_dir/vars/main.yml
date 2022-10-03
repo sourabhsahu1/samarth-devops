@@ -1,31 +1,15 @@
 ---
 
-service_form_service: form-service
-service_gateway_service: gateway-service
-service_user_service: user-service
 service_web_service: web-service
-service_analytics_service: analytics-service
 service_esamwad_backend_service: esamwad-backend-service
 
-service_form_port: 8099
-service_gateway_port: 8080
-service_user_port: 8081
 service_web_port: 3000
-service_analytics_port: 8089
 service_esamwad_backend_port: 8000
 
-network_alias_form_service: form-service
-network_alias_gateway_service: gateway-service
-network_alias_user_service: user-service
 network_alias_web_service: web-service
-network_alias_analytics_service: analytics-service
 network_alias_esamwad_backend_service: esamwad-backend-service 
 
-image_form_service: smf-form-service
-image_gateway_service: smf-gateway-service
-image_user_service: smf-user-service
 image_web_service: smf-web-service
-image_analytics_service: smf-analytics-service
 image_esamwad_backend_service: samarth-esamwad-backend-service
 
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
