@@ -24,3 +24,16 @@ chmod +x jenkins-job-setup.sh
 - Generate key-pair `ssh-keygen`
 - Add private key to Jenkins and public key to GitHub
 - Configure jobs to use the new credentials
+
+- On the jenkins server setup a local registry
+
+```
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+```
+
+
+- Run the following and add `jenkins ALL=(ALL) NOPASSWD: ALL` at the end
+```
+sudo visudo
+
+```

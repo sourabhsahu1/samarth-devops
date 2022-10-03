@@ -23,21 +23,21 @@ apt-get install -y python3-pip
 echo -e "\n\e[0;32m${bold}Installating Git ${normal}"
 apt-get install -y git
 
-# echo -e "\n\e[0;32m${bold}Installating Docker${normal}"
-# apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-# add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-# apt-get update
-# apt-get install -y docker-ce docker-ce-cli containerd.io
+echo -e "\n\e[0;32m${bold}Installating Docker${normal}"
+apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+apt-get update
+apt-get install -y docker-ce docker-ce-cli containerd.io
 
 echo -e "\n\e[0;32m${bold}Installating Ansible${normal}"
 pip3 install ansible 
 
-# echo -e "\n\e[0;32m${bold}Installating pip docker${normal}"
-# pip3 install docker
+echo -e "\n\e[0;32m${bold}Installating pip docker${normal}"
+pip3 install docker
 
-# echo -e "\n\e[0;32m${bold}Adding jenkins user to docker group${normal}"
-# usermod -aG docker jenkins
+echo -e "\n\e[0;32m${bold}Adding jenkins user to docker group${normal}"
+usermod -aG docker jenkins
 
 echo -e "\n\e[0;32m${bold}Creating bashrc for jenkins user ${normal}"
 cp /etc/skel/.bashrc /var/lib/jenkins

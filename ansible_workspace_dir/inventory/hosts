@@ -1,3 +1,5 @@
 [dev]
+128.199.30.12
 
-localhost ansible_connection=local  
+[all:vars]
+ansible_user=root
