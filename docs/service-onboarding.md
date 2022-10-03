@@ -3,7 +3,7 @@
 ### Pre-requisites
 
 - First setup jenkins using `jenkins-setup.md`
-- Each service should have a `Dockerfile`, `Jenkinsfile` present. Jenkins file is very generic and one can use the given `Jenkinsfile` in the root folder of this repo.
+- Each service should have a build folder which contains `Dockerfile`, `Jenkinsfile` and a `build.sh` if needed. Jenkins file is very generic and one can use the given `Jenkinsfile` in the root folder of this repo.
 
 ### Steps for build
 
