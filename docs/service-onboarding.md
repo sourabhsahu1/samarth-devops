@@ -9,7 +9,7 @@
 service_repo_name
     - build
         - Jenkinsfile
-        - Dockerfile (You can either keep the docker file here or somewhere else, but make sure to update the path in the Jenkinsfile accordingly)
+        - Dockerfile 
         - build.sh (optional)
     - src
     - other folders
