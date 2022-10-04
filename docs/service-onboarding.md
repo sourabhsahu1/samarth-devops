@@ -8,8 +8,8 @@
 ```
 service_repo_name
     - build
-        - Dockerfile
         - Jenkinsfile
+        - Dockerfile (You can either keep the docker file here or somewhere else, but make sure to update the path in the Jenkinsfile accordingly)
         - build.sh (optional)
     - src
     - other folders
