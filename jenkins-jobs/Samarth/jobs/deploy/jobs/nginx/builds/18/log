@@ -1,0 +1,82 @@
+Started by user [8mha:////4Pi4XZ7oRPIqc8a7DPZ2EKrzrTGjam18VIOQ1tXRULm5AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Samarth/deploy/nginx
+Copied 1 artifact from "[8mha:////4N3i5vgW3unjL1mFPvJHjc79NQ0KHGldqqH3/B5Np101AAAAmx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQL2FQ1M/KT9IPTsxNLCrJALOTSjNzUsCsvPTMvAp9AJCXd9OmAAAA[0mSamarth » build » nginx" build number [8mha:////4Ax2gVFInHiByMMbJa8jXbVLsbusKM4z08eX7eNTjYG/AAAAnB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMQoYVDWz8pP0g9OzE0sKskAs5NKM3NSwKy89My8Cn1jfQDWKii/qAAAAA==[0m3
+[nginx] $ /bin/bash /tmp/jenkins7580120743821079540.sh
+
+PLAY [dev] *********************************************************************
+[WARNING]: While constructing a mapping from /home/samarth-
+devops/ansible_workspace_dir/group_vars/dev.yml, line 2, column 1, found a
+duplicate dict key (service_mem_reserved_web_service). Using last defined value
+only.
+[WARNING]: While constructing a mapping from /home/samarth-
+devops/ansible_workspace_dir/group_vars/dev.yml, line 2, column 1, found a
+duplicate dict key (service_mem_limit_web_service). Using last defined value
+only.
+
+TASK [Gathering Facts] *********************************************************
+ok: [128.199.30.12]
+
+TASK [stack-proxy : Ensure env directory exists] *******************************
+ok: [128.199.30.12]
+
+TASK [stack-proxy : Ensure stack directory exists] *****************************
+ok: [128.199.30.12]
+
+TASK [stack-proxy : Ensure config directory exists] ****************************
+ok: [128.199.30.12]
+
+TASK [stack-proxy : Save configurations into an env file] **********************
+ok: [128.199.30.12]
+
+TASK [stack-proxy : Save stack file] *******************************************
+ok: [128.199.30.12]
+
+TASK [stack-proxy : Save nginx.conf] *******************************************
+ok: [128.199.30.12]
+
+TASK [stack-proxy : Save proxy-default.conf] ***********************************
+ok: [128.199.30.12]
+
+TASK [stack-proxy : Remove old style proxy stack] ******************************
+fatal: [128.199.30.12]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'env' is undefined\n\nThe error appears to be in '/home/samarth-devops/ansible_workspace_dir/roles/stack-proxy/tasks/main.yml': line 35, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Remove old style proxy stack\n  ^ here\n"}
+...ignoring
+
+TASK [stack-proxy : Remove stack] **********************************************
+changed: [128.199.30.12]
+
+TASK [stack-proxy : Ensure network exists] *************************************
+failed: [128.199.30.12] (item={'name': 'application_default', 'subnet': '11.11.1.0/24'}) => {"ansible_loop_var": "item", "changed": true, "cmd": "docker network create --driver overlay application_default --subnet 11.11.1.0/24", "delta": "0:00:00.054834", "end": "2022-10-04 06:33:30.285038", "item": {"name": "application_default", "subnet": "11.11.1.0/24"}, "msg": "non-zero return code", "rc": 1, "start": "2022-10-04 06:33:30.230204", "stderr": "Error response from daemon: network with name application_default already exists", "stderr_lines": ["Error response from daemon: network with name application_default already exists"], "stdout": "", "stdout_lines": []}
+...ignoring
+
+TASK [stack-proxy : Remove docker secrets prom_admin_creds] ********************
+changed: [128.199.30.12] => (item=None)
+changed: [128.199.30.12] => (item=None)
+changed: [128.199.30.12] => (item=None)
+changed: [128.199.30.12]
+
+TASK [stack-proxy : Create docker secrets prom_admin_creds] ********************
+changed: [128.199.30.12] => (item=None)
+changed: [128.199.30.12] => (item=None)
+changed: [128.199.30.12] => (item=None)
+changed: [128.199.30.12]
+
+TASK [stack-proxy : Remove old nginx.conf docker config] ***********************
+changed: [128.199.30.12]
+
+TASK [stack-proxy : Remove old proxy-default.conf docker config] ***************
+changed: [128.199.30.12]
+
+TASK [stack-proxy : Save nginx.conf as docker config] **************************
+changed: [128.199.30.12]
+
+TASK [stack-proxy : Save proxy-default.conf as docker config] ******************
+changed: [128.199.30.12]
+
+TASK [stack-proxy : Deploy stack] **********************************************
+changed: [128.199.30.12]
+
+PLAY RECAP *********************************************************************
+128.199.30.12              : ok=18   changed=9    unreachable=0    failed=0    skipped=0    rescued=0    ignored=2   
+
+Finished: SUCCESS

@@ -22,9 +22,11 @@
     </hudson.plugins.copyartifact.CopyArtifact>
     <hudson.tasks.Shell>
       <command>#!/bin/bash
+sudo cp commit_id.txt /home/samarth-devops/ansible_workspace_dir/
 cd /home/samarth-devops/ansible_workspace_dir
 sudo cp /var/lib/jenkins/workspace/Samarth/deploy/nginx/commit_id.txt .
-sudo ansible-playbook -i inventory/hosts --extra-vars  &quot;tag=`cat commit_id.txt` , deploy_host_name=dev&quot; main.yml --tag stack-proxy</command>
+sudo ansible-playbook -i inventory/hosts --extra-vars  &quot;tag=`cat commit_id.txt` , deploy_host_name=dev&quot; main.yml --tag stack-proxy
+sudo rm commit_id.txt</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>

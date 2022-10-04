@@ -35,7 +35,7 @@
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
           <url>git@github.com:Samarth-HP/esamwad-backend.git</url>
-          <credentialsId>tushar-jenkins</credentialsId>
+          <credentialsId>tushar5526</credentialsId>
         </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
       <branches>
