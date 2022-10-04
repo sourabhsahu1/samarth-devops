@@ -1,6 +1,6 @@
 # Steps to setup E2E deployment using Jenkins, Ansible, Docker Swarm
 
-- Clone the repo and run `jenkins-setup.sh`
+- Clone the repo in the `/home` (make sure to clone it there, as we will be creating symlink assuming this) folder of the server and run `jenkins-setup.sh` 
 
 ```
 cd scripts
