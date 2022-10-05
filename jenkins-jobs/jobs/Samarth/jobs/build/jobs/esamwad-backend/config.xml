@@ -12,16 +12,6 @@
           <trim>false</trim>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
-          <name>docker_pre_build</name>
-          <defaultValue>esamwad-backend-service</defaultValue>
-          <trim>false</trim>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>branch_name</name>
-          <defaultValue>jenkins-test</defaultValue>
-          <trim>false</trim>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
           <name>docker_server</name>
           <defaultValue>localhost:5000</defaultValue>
           <trim>false</trim>
