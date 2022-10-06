@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   proxy:
-    image: {{ docker_hub_url }}/samarth-nginx:{{ tag }}
+    image: nginx
     ports:
       - "8000:80"
     deploy:
