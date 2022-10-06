@@ -6,16 +6,8 @@
   vars_files:
     - "vars/main.yml"
   roles:
-    - role: sample-deploy-web-service
-      tags: [sample-deploy-web-service]
     - role: stack-proxy
       tags: [stack-proxy]
     - role: deploy-esamwad-backend
       tags: [deploy-esamwad-backend]
-
-      #  tasks:
-      #    - name: Remove the env directory
-      #      file:
-      #        path: "{{ env_files_dir }}"
-      #        state: absent
 

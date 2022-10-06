@@ -16,22 +16,6 @@ config_files_dir: /wingspan_config_files
 # Secret files dir
 docker_secret_files_dir: /wingspan_docker_secret_location
 
-#smtp details
-smtp_host: #smtp_host
-smtp_port: #smtp_port
-smtp_username: #smtp_username
-smtp_password: #smtp_password
-smtp_email: #from smtp_email
-
-mysql_host:  #mysql server IP
-mysql_username:  #mysql username
-mysql_password:  #mysql password
-elastic_host: #elasticsearch IP
-elastic_username: #elasticsearch username
-elastic_password: #elasticsearch password
-
-kafka_host: #kafka IP
-
 memory_t: 128M
 memory_xs: 256M
 memory_s: 512M
@@ -39,48 +23,25 @@ memory_m: 1024M
 memory_l: 2048M
 memory_xl: 4096M
 
-service_replicas_form_service: 1
-service_mem_reserved_form_service: "{{ memory_m }}"
-service_mem_limit_form_service: "{{ memory_l }}"
-force_reload_form_service: true
-
-service_replicas_user_service: 1
-service_mem_reserved_user_service: "{{ memory_m }}"
-service_mem_limit_user_service: "{{ memory_l }}"
-force_reload_user_service: true
-
-service_replicas_gateway_service: 1
-service_mem_reserved_gateway_service: "{{ memory_m }}"
-service_mem_limit_gateway_service: "{{ memory_l }}"
-force_reload_gateway_service: true
-
-service_replicas_web_service: 1
-service_mem_reserved_web_service: "{{ memory_m }}"
-service_mem_limit_web_service: "{{ memory_l }}"
-force_reload_web_service: true
-
 proxy_reservation_memory: "{{ memory_xs }}"
 proxy_limit_memory: "{{ memory_s }}"        
 proxy_replicas: 1
-
 
 service_replicas_esmawad_backend_service: 1
 service_mem_reserved_web_service: "{{ memory_m }}"
 service_mem_limit_web_service: "{{ memory_l }}"
 force_reload_esmawad-backend_service: true
 
-esamwad_backend_logs: /mydata/logs/backend
-
 publish_ports: false
 var_docker_deploy_node_type: manager
 
-cloud_type: azure #Cloud provider
-storage_key: # cloud storage key 
-storage_secret: #loud storage secret
-container_name: upsmf-data
+# cloud_type: azure #Cloud provider
+# storage_key: # cloud storage key 
+# storage_secret: #loud storage secret
+# container_name: upsmf-data
 
-#update SSL Key
-core_vault_proxy_site_key: |+
+# #update SSL Key
+# core_vault_proxy_site_key: |+
 
-#update SSL cert  
-core_vault_proxy_site_crt: |+
+# #update SSL cert  
+# core_vault_proxy_site_crt: |+
