@@ -4,7 +4,7 @@ services:
   proxy:
     image: {{ docker_hub_url }}/samarth-nginx:{{ tag }}
     ports:
-      - "80:8000"
+      - "8000:80"
     deploy:
       replicas: {{ proxy_replicas }}
       # resources:
