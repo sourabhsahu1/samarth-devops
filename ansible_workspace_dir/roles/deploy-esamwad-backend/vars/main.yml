@@ -1,8 +1,8 @@
 ---
 # vars file for deploy-sb-ext
 # For script
-template_compose_file_name: esamwad-backend-compose-file.j2
-template_env_file_name: esamwad-backend-service-env.j2
+template_compose_file_name: compose-file.j2
+template_env_file_name: env.j2
 compose_file_name: "{{ service_esamwad_backend_service }}.yml"
 env_file_name: "{{ service_esamwad_backend_service }}.env"
 compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name }}"
@@ -10,7 +10,6 @@ env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
 user_friendly_name: esamwad backend service
 
 
-# For service
 application_port: "{{ service_esamwad_backend_port }}"
 image_name: "{{ image_esamwad_backend_service }}"
 tag: "{{ tags_esamwad_backend_service }}"
@@ -20,6 +19,6 @@ replicas: "{{ service_replicas_esmawad_backend_service }}"
 network_alias_name: "{{ network_alias_esamwad_backend_service }}"
 docker_service_stack_name: samarth
 docker_service_name: "{{ service_esamwad_backend_service }}"
-force_reload_esmawad-backend_service: "{{ force_reload_web_service }}"
-host_logs_location: "{{ web_logs_path }}"
+force_reload_esmawad-backend_service: "{{ force_reload_esmawad-backend_service }}"
+host_logs_location: "{{ esamwad_backend_logs }}"
 docker_logs_location: /logs
