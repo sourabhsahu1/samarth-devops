@@ -13,7 +13,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.47">
-      <project>Samarth/build/esamwad-backend</project>
+      <project>Samarth/production/build/esamwad-backend/master</project>
       <filter>commit_id.txt</filter>
       <target></target>
       <excludes></excludes>

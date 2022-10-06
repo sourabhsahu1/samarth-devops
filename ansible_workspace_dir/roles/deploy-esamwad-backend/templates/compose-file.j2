@@ -4,9 +4,14 @@ services:
   {{ docker_service_name }}:
     image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
     hostname: "{{ docker_service_name }}"
+    
+    {% if publish_ports == true %}
 
     ports:
       - 8006:8000
+      
+    {% endif %}
+
 
     expose:
       - 8000

@@ -30,9 +30,9 @@ proxy_replicas: 1
 service_replicas_esmawad_backend_service: 1
 service_mem_reserved_web_service: "{{ memory_m }}"
 service_mem_limit_web_service: "{{ memory_l }}"
-force_reload_esmawad-backend_service: true
+force_reload_esmawad_backend_service: true
 
-publish_ports: false
+publish_ports: true
 var_docker_deploy_node_type: manager
 
 # cloud_type: azure #Cloud provider

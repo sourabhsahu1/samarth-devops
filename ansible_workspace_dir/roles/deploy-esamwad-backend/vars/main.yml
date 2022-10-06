@@ -19,6 +19,6 @@ replicas: "{{ service_replicas_esmawad_backend_service }}"
 network_alias_name: "{{ network_alias_esamwad_backend_service }}"
 docker_service_stack_name: samarth
 docker_service_name: "{{ service_esamwad_backend_service }}"
-force_reload_esmawad-backend_service: "{{ force_reload_esmawad-backend_service }}"
+force_reload: "{{ force_reload_esmawad_backend_service }}"
 host_logs_location: "{{ esamwad_backend_logs }}"
 docker_logs_location: /logs
