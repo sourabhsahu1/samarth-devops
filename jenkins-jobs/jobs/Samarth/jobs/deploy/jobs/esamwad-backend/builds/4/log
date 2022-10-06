@@ -1,8 +1,0 @@
-Started by user [8mha:////4NsbvUkkzT/jDgCBPQhw1vzBVr3+knxaqRjKIg+/zUygAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
-Running as SYSTEM
-Building in workspace /var/lib/jenkins/workspace/Samarth/deploy/esamwad-backend
-Copied 1 artifact from "[8mha:////4IkVUueDXScpnkFuk9OXbsZRQ628FlGBLt+ECZDzou6jAAAApR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLGHQ1s/KT9IPTsxNLCrJALOTSjNzUsCs1OLE3PLEFN2kxOTs1LwUfQBdWzDdsAAAAA==[0mSamarth » build » esamwad-backend" build number [8mha:////4CKFk2sK9dmJ2GXz9xzDkTh4rv9NLPuPkWVQC5k2yHjVAAAAph+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMQoYdDVz8pP0g9OzE0sKskAs5NKM3NSwKzU4sTc8sQU3aTE5OzUvBR9c30AVxhpuLIAAAA=[0m7
-[esamwad-backend] $ /bin/bash /tmp/jenkins3299040928821232004.sh
-sudo: ansible-playbook: command not found
-Build step 'Execute shell' marked build as failure
-Finished: FAILURE

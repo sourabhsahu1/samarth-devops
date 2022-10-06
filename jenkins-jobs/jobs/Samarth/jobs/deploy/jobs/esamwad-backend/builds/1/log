@@ -1,9 +1,0 @@
-Started by user [8mha:////4NsbvUkkzT/jDgCBPQhw1vzBVr3+knxaqRjKIg+/zUygAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
-Running as SYSTEM
-Building in workspace /var/lib/jenkins/workspace/Samarth/deploy/esamwad-backend
-[esamwad-backend] $ /bin/bash /tmp/jenkins17343238446967865546.sh
-/tmp/jenkins17343238446967865546.sh: line 2: cd: /home/ubuntu/ansible_workspace_dir: No such file or directory
-cp: cannot stat '/var/lib/jenkins/workspace/smf/deploy/form-service/commit_id.txt': No such file or directory
-cat: commit_id.txt: No such file or directory
-Build step 'Execute shell' marked build as failure
-Finished: FAILURE
