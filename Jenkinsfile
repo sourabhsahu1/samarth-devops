@@ -16,7 +16,7 @@ node() {
 
     stage('docker-build') {
             sh '''
-                docker build -t $docker_server/$docker_repo:$commit_id app/
+                docker build -t $docker_server/$docker_repo:$commit_id build/
                 '''
     }
 
