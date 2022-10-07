@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  {{ docker_service_name }}:
+    image: {{ DOCKER_HUB_IMAGE }}
+    environment:
+      DATABASE_URL: {{ DATABASE_URL }}
+      DATABASE_ROOT_USER: {{ POSTGRES_USER }}
+      DATABASE_ROOT_PASSWORD: {{ POSTGRES_PASSWORD }}
+      DATABASE_USER: {{ DATABASE_USER }}
+      DATABASE_PASSWORD: {{ DATABASE_PASSWORD }}
+      FUSIONAUTH_MEMORY: {{ FUSIONAUTH_MEMORY }}
+      FUSIONAUTH_SEARCH_ENGINE_TYPE: elasticsearch
+      FUSIONAUTH_SEARCH_SERVERS: {{ ELASTIC_SEARCH_URL }}
+      FUSIONAUTH_URL: http://fusionauth:9011
+      FUSIONAUTH_RUNTIME_MODE: production
+    restart: unless-stopped
+    ports:
+      - {{ service_fusion_auth_port }}:9011
+    volumes:
+      - fusion_auth_config:/usr/local/fusionauth/config
+
+networks:
+  application_default:
+    external: true
+
+volumes:
+  fusion_auth_config:

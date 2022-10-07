@@ -31,6 +31,10 @@ service_replicas_esmawad_backend_service: 1
 service_mem_reserved_web_service: "{{ memory_m }}"
 service_mem_limit_web_service: "{{ memory_l }}"
 
+
+service_replicas_fusion_auth_service: 1
+
+
 publish_ports: true
 var_docker_deploy_node_type: manager
 

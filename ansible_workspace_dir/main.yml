@@ -12,3 +12,5 @@
       tags: [deploy-esamwad-backend]
     - role: deploy-user-service
       tags: [deploy-user-service]
+    - role: deploy-fusion-auth
+      tags: [deploy-fusion-auth]

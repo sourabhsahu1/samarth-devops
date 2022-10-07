@@ -1,0 +1,33 @@
+---
+# vars file for deploy-sb-ext
+# For script
+template_compose_file_name: compose-file.j2
+template_env_file_name: env.j2
+compose_file_name: "{{ service_fusion_auth_service }}.yml"
+env_file_name: "{{ service_fusion_auth_service }}.env"
+compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name }}"
+env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
+user_friendly_name: fusion_authservice
+
+
+application_port: "{{ service_fusion_auth_port }}"
+image_name: "{{ image_fusion_auth_service }}"
+tag: "{{ tags_fusion_auth_service }}"
+host_port: "{{ application_port }}"
+docker_port: "{{ application_port }}"
+replicas: "{{ service_replicas_fusion_auth_service }}"
+network_alias_name: "{{ network_alias_fusion_auth_service }}"
+docker_service_stack_name: samarth
+docker_service_name: "{{ service_fusion_auth_service }}"
+force_reload: "{{ force_reload_fusion_auth_service }}"
+host_logs_location: "{{ fusion_auth_logs }}"
+docker_logs_location: /logs
+
+DOCKER_HUB_IMAGE: fusionauth/fusionauth-app:{{ tag }}
+DATABASE_URL: jdbc:postgresql://db:5432/fusionauth
+POSTGRES_USER: xxxx
+POSTGRES_PASSWORD: xxxx
+DATABASE_USER: xxxx
+DATABASE_PASSWORD: xxxx
+FUSIONAUTH_MEMORY: 2048M
+ELASTIC_SEARCH_URL: http://localhost:9200

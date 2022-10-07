@@ -16,5 +16,13 @@ image_user_service: samarth-user-service
 user_service_logs: /mydata/logs/user-service
 
 
+service_fusion_auth_service: fusion-auth-service
+service_fusion_auth_port: 9011
+network_alias_fusion_auth_service: fusion-auth-service
+image_fusion_auth_service: samarth-fusion-auth-service
+fusion_auth_logs: /mydata/logs/fusion-auth
+force_reload_fusion_auth_service: true
+
+
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"
