@@ -27,3 +27,17 @@ service_repo_name
 - Go to `ansible_workspace_dir` and add a new tag and respective roles for the new service. You can use the structure of existing roles to add a new service.
 - Update the Nginx conf file to expose your services on the local host from the docker swarm. 
 
+### Gotchas for localsetup
+
+- Uncomment the lines in inventory/hosts
+
+- Docker swarm will have all the services on a default network. Run `docker network create -d overlay application_default` to create a default network for your services. 
+
+- ansible playbooks have global variables declared in `group_vars/dev.yml` and `vars/main.yml` in the `ansible_workspace_dir`. Local variables are there in each roles' `vars/main.yml`
+
+
+# Possible upcoming updates
+
+- standard routes for each services might be used in nginx default conf. Like to access esamwad-backend a route `/samarth/esamwad-backend` would be defined. 
+
+- Hashicorp intergration to manage secrets
