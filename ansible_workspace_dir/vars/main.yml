@@ -6,6 +6,7 @@ service_esamwad_backend_port: 8000
 network_alias_esamwad_backend_service: esamwad-backend-service 
 image_esamwad_backend_service: esamwad-backend
 esamwad_backend_logs: /mydata/logs/esamwad-backend
+force_reload_esmawad_backend_service: true
 
 
 service_user_service: user-service
