@@ -10,4 +10,5 @@
       tags: [stack-proxy]
     - role: deploy-esamwad-backend
       tags: [deploy-esamwad-backend]
-
+    - role: deploy-user-service
+      tags: [deploy-user-service]

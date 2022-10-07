@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  {{ docker_service_name }}:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    ports:
+    - '3006:3000'
+
+    networks:
+      application_default:
+        aliases:
+            - {{ network_alias_name }}
+
+networks:
+  application_default:
+    external: true
