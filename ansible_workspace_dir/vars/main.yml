@@ -5,13 +5,23 @@ service_esamwad_backend_service: esamwad-backend-service
 
 service_esamwad_backend_port: 8000
 
-network_alias_esamwad_backend_service: esamwad-backend-service 
+network_alias_esamwad_backend_service: esamwad-backend-service
 
 image_esamwad_backend_service: samarth-esamwad-backend-service
 
 # Add logs specific location herer, if needed
 esamwad_backend_logs: /mydata/logs/backend
 
+service_user_service: user-service
+
+service_user_port: 8000
+
+network_alias_user_service: user-service
+
+image_user_service: samarth-user-service
+
+# Add logs specific location herer, if needed
+user_service_logs: /mydata/logs/backend
 
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"
