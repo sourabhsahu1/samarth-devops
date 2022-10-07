@@ -24,7 +24,7 @@
       <configVersion>2</configVersion>
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
-          <url>https://github.com/sourabhsahu1/esamwad-user-service</url>
+          <url>git@github.com:Samagra-Development/user-service.git</url>
           <credentialsId>034ebb06-24f3-462b-b42e-9b25f8e75a96</credentialsId>
         </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
