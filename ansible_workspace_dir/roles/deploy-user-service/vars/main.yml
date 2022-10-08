@@ -9,11 +9,10 @@ compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name 
 env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
 user_friendly_name: user service
 
-application_port: "{{ service_user_port }}"
+docker_port: "{{ service_user_docker_port }}"
+host_port: "{{ service_user_host_port }}"
 image_name: "{{ image_user_service }}"
 tag: "{{ tags_user_service }}"
-host_port: "{{ application_port }}"
-docker_port: "{{ application_port }}"
 replicas: "{{ service_replicas_user_service }}"
 network_alias_name: "{{ network_alias_user_service }}"
 docker_service_stack_name: samarth

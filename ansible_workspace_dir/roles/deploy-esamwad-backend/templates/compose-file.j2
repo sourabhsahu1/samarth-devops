@@ -8,7 +8,7 @@ services:
     {% if publish_ports == true %}
 
     ports:
-      - 8006:8000
+      - {{ host_port }}:{{ docker_port }}
       
     {% endif %}
 

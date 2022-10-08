@@ -16,8 +16,14 @@ services:
       FUSIONAUTH_URL: http://fusionauth:9011
       FUSIONAUTH_RUNTIME_MODE: production
     restart: unless-stopped
+
+    {% if publish_ports == true %}
+
     ports:
-      - {{ service_fusion_auth_port }}:9011
+      - {{ host_port }}:{{ docker_port }}
+      
+    {% endif %}
+    
     volumes:
       - fusion_auth_config:/usr/local/fusionauth/config
 

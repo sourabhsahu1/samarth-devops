@@ -10,11 +10,10 @@ env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
 user_friendly_name: fusion_authservice
 
 
-application_port: "{{ service_fusion_auth_port }}"
+docker_port: "{{ service_fusion_auth_docker_port }}"
+host_port: "{{ service_fusion_auth_host_port }}"
 image_name: "{{ image_fusion_auth_service }}"
 tag: "{{ tags_fusion_auth_service }}"
-host_port: "{{ application_port }}"
-docker_port: "{{ application_port }}"
 replicas: "{{ service_replicas_fusion_auth_service }}"
 network_alias_name: "{{ network_alias_fusion_auth_service }}"
 docker_service_stack_name: samarth

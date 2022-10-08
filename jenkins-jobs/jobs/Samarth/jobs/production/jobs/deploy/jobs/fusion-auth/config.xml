@@ -14,7 +14,6 @@
   <builders>
     <hudson.tasks.Shell>
       <command>#!/bin/bash
-sudo cp commit_id.txt /home/samarth-devops/ansible_workspace_dir
 cd /home/samarth-devops/ansible_workspace_dir
 ansible-playbook -i inventory/hosts --extra-vars  &apos;tag=latest , deploy_host_name=dev&apos; main.yml --tag deploy-fusion-auth</command>
       <configuredLocalRules/>

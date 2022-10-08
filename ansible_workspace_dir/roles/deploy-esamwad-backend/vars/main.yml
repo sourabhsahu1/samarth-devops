@@ -10,11 +10,10 @@ env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
 user_friendly_name: esamwad backend service
 
 
-application_port: "{{ service_esamwad_backend_port }}"
+docker_port: "{{ service_esamwad_backend_docker_port }}"
+host_port: "{{ service_esamwad_backend_host_port }}"
 image_name: "{{ image_esamwad_backend_service }}"
 tag: "{{ tags_esamwad_backend_service }}"
-host_port: "{{ application_port }}"
-docker_port: "{{ application_port }}"
 replicas: "{{ service_replicas_esmawad_backend_service }}"
 network_alias_name: "{{ network_alias_esamwad_backend_service }}"
 docker_service_stack_name: samarth

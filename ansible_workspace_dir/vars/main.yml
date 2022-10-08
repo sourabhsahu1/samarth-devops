@@ -2,7 +2,8 @@
 # Update variables for each service here
 
 service_esamwad_backend_service: esamwad-backend-service
-service_esamwad_backend_port: 8000
+service_esamwad_backend_host_port: 8006
+service_esamwad_backend_docker_port: 8000
 network_alias_esamwad_backend_service: esamwad-backend-service 
 image_esamwad_backend_service: esamwad-backend
 esamwad_backend_logs: /mydata/logs/esamwad-backend
@@ -10,14 +11,16 @@ force_reload_esmawad_backend_service: true
 
 
 service_user_service: user-service
-service_user_port: 8000
+service_user_host_port: 3006
+service_user_docker_port: 3000
 network_alias_user_service: user-service
 image_user_service: user-service
 user_service_logs: /mydata/logs/user-service
 force_reload_user_service: true
 
 service_fusion_auth_service: fusion-auth-service
-service_fusion_auth_port: 9011
+service_fusion_auth_host_port: 9011
+service_fusion_auth_docker_port: 9011
 network_alias_fusion_auth_service: fusion-auth-service
 image_fusion_auth_service: samarth-fusion-auth-service
 fusion_auth_logs: /mydata/logs/fusion-auth
