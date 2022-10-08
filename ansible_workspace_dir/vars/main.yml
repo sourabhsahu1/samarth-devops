@@ -12,9 +12,9 @@ force_reload_esmawad_backend_service: true
 service_user_service: user-service
 service_user_port: 8000
 network_alias_user_service: user-service
-image_user_service: samarth-user-service
+image_user_service: user-service
 user_service_logs: /mydata/logs/user-service
-
+force_reload_user_service: true
 
 service_fusion_auth_service: fusion-auth-service
 service_fusion_auth_port: 9011
