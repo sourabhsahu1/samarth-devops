@@ -18,3 +18,5 @@
       tags: [deploy-yaus-hasura]
     - role: deploy-yaus-broker
       tags: [deploy-yaus-broker]
+    - role: deploy-yaus-redis-ui
+      tags: [deploy-yaus-redis-ui]

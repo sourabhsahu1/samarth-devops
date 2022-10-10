@@ -1,0 +1,24 @@
+---
+# vars file for deploy-sb-ext
+# For script
+template_compose_file_name: compose-file.j2
+template_env_file_name: env.j2
+compose_file_name: "{{ service_yaus_redis_ui }}.yml"
+env_file_name: "{{ service_yaus_redis_ui }}.env"
+compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name }}"
+env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
+user_friendly_name: yaus_redis_ui_service
+
+docker_port: "{{ service_yaus_redis_ui_docker_port }}"
+host_port: "{{ service_yaus_redis_ui_host_port }}"
+image_name: "{{ image_yaus_redis_ui_service }}"
+tag: "{{ tags_yaus_redis_ui_service }}"
+replicas: "{{ service_replicas_yaus_redis_ui_service }}"
+network_alias_name: "{{ network_alias_yaus_redis_ui_service }}"
+docker_service_stack_name: samarth
+docker_service_name: "{{ service_yaus_redis_ui }}"
+force_reload: "{{ force_reload_yaus_redis_ui_service }}"
+host_logs_location: "{{ yaus_redis_ui_logs }}"
+docker_logs_location: /logs
+
+DOCKER_HUB_IMAGE: redislabs/redisinsight:{{ tag }}

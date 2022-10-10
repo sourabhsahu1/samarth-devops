@@ -44,5 +44,14 @@ image_yaus_broker_service: samarth-yaus_broker-service
 yaus_broker_logs: /mydata/logs/yaus_broker
 force_reload_yaus_broker_service: true
 
+# For YAUS Redis UI
+service_yaus_redis_ui: yaus_redis_ui-service
+service_yaus_redis_ui_host_port: 8088
+service_yaus_redis_ui_docker_port: 8001
+network_alias_yaus_redis_ui_service: yaus_redis_ui-service
+image_yaus_redis_ui_service: samarth-yaus_redis_ui-service
+yaus_redis_ui_logs: /mydata/logs/yaus_redis_ui
+force_reload_yaus_redis_ui_service: true
+
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"
