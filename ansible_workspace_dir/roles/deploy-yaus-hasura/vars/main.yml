@@ -1,0 +1,28 @@
+---
+# vars file for deploy-sb-ext
+# For script
+template_compose_file_name: compose-file.j2
+template_env_file_name: env.j2
+compose_file_name: "{{ service_yaus_hasura_service }}.yml"
+env_file_name: "{{ service_yaus_hasura_service }}.env"
+compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name }}"
+env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
+user_friendly_name: yaus_hasuraservice
+
+
+docker_port: "{{ service_yaus_hasura_docker_port }}"
+host_port: "{{ service_yaus_hasura_host_port }}"
+image_name: "{{ image_yaus_hasura_service }}"
+tag: "{{ tags_yaus_hasura_service }}"
+replicas: "{{ service_replicas_yaus_hasura_service }}"
+network_alias_name: "{{ network_alias_yaus_hasura_service }}"
+docker_service_stack_name: samarth
+docker_service_name: "{{ service_yaus_hasura_service }}"
+force_reload: "{{ force_reload_yaus_hasura_service }}"
+host_logs_location: "{{ yaus_hasura_logs }}"
+docker_logs_location: /logs
+
+DOCKER_HUB_IMAGE: hasura/graphql-engine:{{ tag }}
+HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://user:password@shortdb:5432/database
+HASURA_GRAPHQL_DATABASE_URL: postgres://user:password@shortdb:5432/database
+HASURA_GRAPHQL_ADMIN_SECRET: xxxx

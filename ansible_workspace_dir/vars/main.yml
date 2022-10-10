@@ -26,6 +26,14 @@ image_fusion_auth_service: samarth-fusion-auth-service
 fusion_auth_logs: /mydata/logs/fusion-auth
 force_reload_fusion_auth_service: true
 
+# For YAUS Hasura
+service_yaus_hasura_service: yaus_hasura-service
+service_yaus_hasura_host_port: 15003
+service_yaus_hasura_docker_port: 8080
+network_alias_yaus_hasura_service: yaus_hasura-service
+image_yaus_hasura_service: samarth-yaus_hasura-service
+yaus_hasura_logs: /mydata/logs/yaus_hasura
+force_reload_yaus_hasura_service: true
 
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"

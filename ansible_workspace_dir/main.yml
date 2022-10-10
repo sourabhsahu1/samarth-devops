@@ -14,3 +14,5 @@
       tags: [deploy-user-service]
     - role: deploy-fusion-auth
       tags: [deploy-fusion-auth]
+    - role: deploy-yaus-hasura
+      tags: [deploy-yaus-hasura]

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4d100bb-9cbc-47cb-a9d6-7ca6fd46a875" name="Default Changelist" comment="YausHasura: Deploy pipeline for Yaus Hasura production">
+      <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/group_vars/dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/group_vars/dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/inventory/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/inventory/hosts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/vars/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/vars/main.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ansible_workspace_dir/roles/deploy-fusion-auth/vars/main.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/scripts/jenkins-jobs-setup.sh" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/scripts/jenkins-setup.sh" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ansible_workspace_dir/vars/main.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ansible_workspace_dir/main.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ansible_workspace_dir/group_vars/dev.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ansible_workspace_dir/inventory/hosts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Jenkinsfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ansible_workspace_dir/roles/deploy-user-service/templates/compose-file.j2" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ansible_workspace_dir/roles/deploy-fusion-auth/templates/compose-file.j2" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="2Ff4muswkEThV5ZkwsxAKaz0CN7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ansible_workspace_dir/roles" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ansible_workspace_dir/roles" />
+      <recent name="$PROJECT_DIR$/jenkins-jobs/jobs/Samarth/jobs/production/jobs/deploy/jobs" />
+      <recent name="$PROJECT_DIR$/ansible_workspace_dir/roles/deploy-fusion-auth/templates" />
+      <recent name="$PROJECT_DIR$/ansible_workspace_dir/roles/deploy-esamwad-backend/templates" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4d100bb-9cbc-47cb-a9d6-7ca6fd46a875" name="Default Changelist" comment="" />
+      <created>1664869967209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664869967209</updated>
+      <workItem from="1664869968703" duration="5808000" />
+      <workItem from="1664961132136" duration="2658000" />
+      <workItem from="1664963816020" duration="7354000" />
+      <workItem from="1665054823895" duration="2898000" />
+      <workItem from="1665071850122" duration="12497000" />
+      <workItem from="1665144575008" duration="1520000" />
+      <workItem from="1665146113832" duration="110000" />
+      <workItem from="1665146235798" duration="4277000" />
+      <workItem from="1665230398705" duration="346000" />
+      <workItem from="1665381023110" duration="11482000" />
+    </task>
+    <task id="LOCAL-00001" summary="FusionAuth: deploy build support via Jenkins">
+      <created>1665145237209</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665145237209</updated>
+    </task>
+    <task id="LOCAL-00002" summary="IDE: added .idea file in `.gitignore`">
+      <created>1665145309160</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665145309160</updated>
+    </task>
+    <task id="LOCAL-00003" summary="YausHasura: Deploy pipeline for Yaus Hasura production">
+      <created>1665390211493</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665390211493</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FusionAuth: deploy build support via Jenkins" />
+    <MESSAGE value="IDE: added .idea file in `.gitignore`" />
+    <MESSAGE value="YausHasura: Deploy pipeline for Yaus Hasura production" />
+    <option name="LAST_COMMIT_MESSAGE" value="YausHasura: Deploy pipeline for Yaus Hasura production" />
+  </component>
+</project>
