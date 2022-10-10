@@ -37,8 +37,8 @@ force_reload_yaus_hasura_service: true
 
 # For YAUS Broker
 service_yaus_broker: yaus_broker-service
-service_yaus_broker_host_port: 15003
-service_yaus_broker_docker_port: 8080
+service_yaus_broker_host_port: 4369
+service_yaus_broker_docker_port: 4369
 network_alias_yaus_broker_service: yaus_broker-service
 image_yaus_broker_service: samarth-yaus_broker-service
 yaus_broker_logs: /mydata/logs/yaus_broker
