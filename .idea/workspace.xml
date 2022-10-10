@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4d100bb-9cbc-47cb-a9d6-7ca6fd46a875" name="Default Changelist" comment="YausHasura: Deploy pipeline for Yaus Hasura production">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/group_vars/dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/group_vars/dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/inventory/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/inventory/hosts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/roles/deploy-yaus-hasura/templates/compose-file.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/roles/deploy-yaus-hasura/templates/compose-file.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/roles/deploy-yaus-hasura/vars/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/roles/deploy-yaus-hasura/vars/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible_workspace_dir/vars/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_workspace_dir/vars/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +84,7 @@
       <workItem from="1665146113832" duration="110000" />
       <workItem from="1665146235798" duration="4277000" />
       <workItem from="1665230398705" duration="346000" />
-      <workItem from="1665381023110" duration="11482000" />
+      <workItem from="1665381023110" duration="14742000" />
     </task>
     <task id="LOCAL-00001" summary="FusionAuth: deploy build support via Jenkins">
       <created>1665145237209</created>
@@ -104,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665390211493</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="YausHasura: Deploy pipeline for Yaus Hasura production">
+      <created>1665396274842</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665396274842</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

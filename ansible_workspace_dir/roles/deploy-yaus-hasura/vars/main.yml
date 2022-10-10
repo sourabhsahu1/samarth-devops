@@ -7,7 +7,7 @@ compose_file_name: "{{ service_yaus_hasura_service }}.yml"
 env_file_name: "{{ service_yaus_hasura_service }}.env"
 compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name }}"
 env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
-user_friendly_name: yaus_hasuraservice
+user_friendly_name: yaus_hasura_service
 
 
 docker_port: "{{ service_yaus_hasura_docker_port }}"
