@@ -7,6 +7,7 @@ services:
       PORT: {{host_port}}
       QUEUE_HOST: {{ODK_UCI_REDIS_HOST_URL}}
       QUEUE_PORT: {{ODK_UCI_REDIS_HOST_PORT}}
+      DATABASE_URL: {{ODK_UCI_HASURA_DATABASE_URL}}
       GQL_URL: {{ODK_UCI_HASURA_DATABASE_URL}}
       GQL_HEADERS: '{"content-type": "application/json", "x-hasura-admin-secret": {{ODK_UCI_HASURA_ADMIN_SECRET}}}'
       UCI_URL: {{ODK_UCI_UCI_URL}}
