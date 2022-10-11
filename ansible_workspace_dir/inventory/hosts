@@ -1,9 +1,10 @@
 [dev]
-# 128.199.30.12
+128.199.30.12
 
-# [all:vars]
-# ansible_user=root
+[all:vars]
+ansible_user=root
 
 # To run ansible playbooks locally, comment the former lines and uncomment the following 
 
-localhost ansible_connection=local 
+# localhost 
+# ansible_connection=local 
