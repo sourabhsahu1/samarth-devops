@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  {{ docker_service_name }}:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    environment: 
+      PORT: {{host_port}}
+      QUEUE_HOST: {{ODK_UCI_REDIS_HOST_URL}}
+      QUEUE_PORT: {{ODK_UCI_REDIS_HOST_PORT}}
+      GQL_URL: {{ODK_UCI_HASURA_DATABASE_URL}}
+      GQL_HEADERS: '{"content-type": "application/json", "x-hasura-admin-secret": {{ODK_UCI_HASURA_ADMIN_SECRET}}}'
+      UCI_URL: {{ODK_UCI_UCI_URL}}
+      UCI_ADAPTER_ID: {{ODK_UCI_UCI_ADAPTER_ID}}
+      HOLIDAY_TEMPLATE_ID: {{ODK_UCI_HOLIDAY_TEMPLATE_ID}}
+      MEETING_TEMPLATE_ID: {{ODK_UCI_MEETING_TEMPLATE_ID}}
+      EXAM_ANNOUNCEMENT_TEMPLATE_ID: {{ODK_UCI_EXAM_ANNOUNCEMENT_TEMPLATE_ID}}
+      EXAM_RESULT_ANNOUNCEMENT_TEMPLATE_ID: "{{ODK_UCI_EXAM_RESULT_ANNOUNCEMENT_TEMPLATE_ID}}"
+      ANNOUNCEMENT_TEMPLATE_ID: "{{ODK_UCI_ANNOUNCEMENT_TEMPLATE_ID}}"
+      HOMEWORK_TEMPLATE_ID: "{{ODK_UCI_HOLIDAY_TEMPLATE_ID}}"
+    networks:
+      application_default:
+        aliases:
+            - {{ network_alias_name }}
+    ports:
+      - {{host_port}}:{{docker_port}}    
+        
+networks:
+  application_default:
+    external: true
+
