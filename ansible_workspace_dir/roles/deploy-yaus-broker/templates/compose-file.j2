@@ -8,7 +8,7 @@ services:
       - RABBITMQ_PASSWORD={{ RABBITMQ_PASSWORD }}
       - RABBITMQ_USERNAME={{ RABBITMQ_USERNAME }}
     volumes:
-      - broker:/bitnami
+      - yaus_broker:/bitnami
 
     {% if publish_ports == true %}
 
@@ -27,4 +27,4 @@ networks:
     external: true
 
 volumes:
-  broker:
+  yaus_broker:

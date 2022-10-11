@@ -8,7 +8,7 @@ services:
     volumes:
       - redisinsight:/db
     volumes:
-      - redis_ui:/bitnami
+      - yaus_redis_ui:/bitnami
 
     {% if publish_ports == true %}
 
@@ -27,4 +27,4 @@ networks:
     external: true
 
 volumes:
-  redis_ui:
+  yaus_redis_ui:
