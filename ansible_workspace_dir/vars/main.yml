@@ -29,7 +29,7 @@ service_odk_uci_adapter_service: odk-uci-adapter-service
 service_odk_uci_adapter_host_port: 5432
 service_odk_uci_adapter_docker_port: 5433
 network_alias_odk_uci_adapter_service: odk-uci-adapter-service
-image_odk_uci_adapter_service: samarth-odk-uci-adapter-service
+image_odk_uci_adapter_service: odk-uci-adapter
 odk_uci_adapter_logs: /mydata/logs/odk-uci-adapter-service
 force_reload_odk_uci_adapter_service: true
 
