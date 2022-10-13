@@ -33,5 +33,13 @@ image_odk_uci_adapter_service: odk-uci-adapter
 odk_uci_adapter_logs: /mydata/logs/odk-uci-adapter-service
 force_reload_odk_uci_adapter_service: true
 
+service_odk_service: odk-service
+service_odk_host_port: 8022
+service_odk_docker_port: 8080
+network_alias_odk_service: odk-service
+image_odk_service: odk-service
+odk_logs: /mydata/logs/odk-service
+force_reload_odk_service: true
+
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"

@@ -1,0 +1,31 @@
+version: "3"
+services:
+  {{ docker_service_name }}:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    environment:
+      DB_USERNAME: {{ODK_DB_USERNAME}}
+      DB_SCHEMA: {{ODK_DB_SCHEMA}}
+      DB_PASSWORD: {{ODK_DB_PASSWORD}}
+      DB_NAME: {{ODK_DB_NAME}}
+      DB_PORT: {{ODK_DB_PORT}}
+      DB_URL: {{ODK_DB_URL}}
+
+    {% if publish_ports == true %}
+
+    ports:
+      - {{ host_port }}:{{ docker_port }}
+      
+    {% endif %}
+
+    volumes:
+        - webapps:/usr/local/tomcat/webapps
+    
+    env_file:
+      - {{ env_file_deployment_location }}
+
+networks:
+  application_default:
+    external: true
+
+volumes:
+  webapps:
