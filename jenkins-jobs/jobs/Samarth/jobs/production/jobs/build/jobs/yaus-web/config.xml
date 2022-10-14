@@ -23,8 +23,8 @@
       <jenkins.branch.BranchSource>
         <source class="jenkins.plugins.git.GitSCMSource" plugin="git@4.12.1">
           <id>31fcccf6-9be5-4a00-9a58-cbb59922d722</id>
-          <remote>git@github.com:Samagra-Development/yaus.git</remote>
-          <credentialsId>65bc9622-122f-4ad9-a11c-45202509dd1e</credentialsId>
+          <remote>https://github.com/Samagra-Development/yaus.git</remote>
+          <credentialsId></credentialsId>
           <traits>
             <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
           </traits>
