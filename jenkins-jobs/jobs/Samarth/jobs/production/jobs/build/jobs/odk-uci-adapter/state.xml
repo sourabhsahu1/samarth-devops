@@ -5,7 +5,7 @@
       <string>31fcccf6-9be5-4a00-9a58-cbb59922d722</string>
       <list>
         <jenkins.plugins.git.GitRemoteHeadRefAction plugin="git@4.12.1">
-          <remote>git@github.com:sourabhsahu1/odk-uci-adapter.git</remote>
+          <remote>git@github.com:Samarth-HP/odk-uci-adapter.git</remote>
           <name>master</name>
         </jenkins.plugins.git.GitRemoteHeadRefAction>
       </list>
