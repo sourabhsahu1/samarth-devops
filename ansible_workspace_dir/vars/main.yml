@@ -8,6 +8,7 @@ network_alias_esamwad_backend_service: esamwad-backend-service
 image_esamwad_backend_service: esamwad-backend
 esamwad_backend_logs: /mydata/logs/esamwad-backend
 force_reload_esmawad_backend_service: true
+esamwad_secret_path: kv/data/samarth/esamwad-backend
 
 service_user_service: user-service
 service_user_host_port: 3006
@@ -43,3 +44,6 @@ force_reload_odk_service: true
 
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"
+
+VAULT_TOKEN: #ADD VAULT TOKEN
+VAULT_URL: #Insert VAULT URL

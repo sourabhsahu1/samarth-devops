@@ -25,7 +25,7 @@
         <source class="jenkins.plugins.git.GitSCMSource" plugin="git@4.12.1">
           <id>31fcccf6-9be5-4a00-9a58-cbb59922d722</id>
           <remote>https://github.com/samagra-comms/odk</remote>
-          <credentialsId>034ebb06-24f3-462b-b42e-9b25f8e75a96</credentialsId>
+          <credentialsId></credentialsId>
           <traits>
             <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
           </traits>
