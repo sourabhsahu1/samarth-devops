@@ -16,3 +16,5 @@
       tags: [deploy-fusion-auth]
     - role: deploy-odk-uci-adapter
       tags: [deploy-odk-uci-adapter]
+    - role: deploy-odk
+      tags: [deploy-odk]

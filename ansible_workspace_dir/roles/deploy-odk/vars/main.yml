@@ -1,0 +1,29 @@
+---
+# vars file for deploy-sb-ext
+# For script
+template_compose_file_name: compose-file.j2
+template_env_file_name: env.j2
+compose_file_name: "{{ service_odk_service }}.yml"
+env_file_name: "{{ service_odk_service }}.env"
+compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name }}"
+env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
+user_friendly_name: odk
+
+docker_port: "{{ service_odk_docker_port }}"
+host_port: "{{ service_odk_host_port }}"
+image_name: "{{ image_odk_service }}"
+tag: "{{ tags_odk_service }}"
+replicas: "{{ service_replicas_odk_service }}"
+network_alias_name: "{{ network_alias_odk_service }}"
+docker_service_stack_name: samarth
+docker_service_name: "{{ service_odk_service }}"
+force_reload: "{{ force_reload_odk_service }}"
+host_logs_location: "{{ odk_service_logs }}"
+docker_logs_location: /logs
+
+ODK_DB_USERNAME: root
+ODK_DB_SCHEMA: xxx
+ODK_DB_PASSWORD: qwerty
+ODK_DB_NAME: xxx
+ODK_DB_PORT: 5466
+ODK_DB_URL: url
