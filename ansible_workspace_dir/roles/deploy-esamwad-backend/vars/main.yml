@@ -23,4 +23,4 @@ host_logs_location: "{{ esamwad_backend_logs }}"
 docker_logs_location: /logs
 
 # Your credentials on the vault
-credentials: "{{ lookup('hashi_vault', 'secret={{ esamwad_secret_path }}', url=VAULT_URL, token=VAULT_TOKEN) }}"
+credentials: "{{ lookup('hashi_vault', 'secret={{ esamwad_secret_path }}', url=VAULT_ADDR, token=VAULT_TOKEN) }}"
