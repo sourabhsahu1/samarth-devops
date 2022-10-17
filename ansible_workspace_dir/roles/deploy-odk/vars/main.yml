@@ -23,9 +23,9 @@ docker_logs_location: /logs
 
 credentials: "{{ lookup('hashi_vault', 'secret={{ odk_secret_path }}', url=VAULT_ADDR, token=VAULT_TOKEN) }}"
 
-ODK_DB_USERNAME: {{ credentials.ODK_DB_USERNAME }}
-ODK_DB_SCHEMA: {{ credentials.ODK_DB_SCHEMA }}
-ODK_DB_PASSWORD: {{ credentials.ODK_DB_PASSWORD }}
-ODK_DB_NAME: {{ credentials.ODK_DB_NAME }}
-ODK_DB_PORT: {{ credentials.ODK_DB_PORT }}
-ODK_DB_URL: {{ credentials.ODK_DB_URL }}
+ODK_DB_USERNAME: "{{ credentials.ODK_DB_USERNAME }}"
+ODK_DB_SCHEMA: "{{ credentials.ODK_DB_SCHEMA }}"
+ODK_DB_PASSWORD: "{{ credentials.ODK_DB_PASSWORD }}"
+ODK_DB_NAME: "{{ credentials.ODK_DB_NAME }}"
+ODK_DB_PORT: "{{ credentials.ODK_DB_PORT }}"
+ODK_DB_URL: "{{ credentials.ODK_DB_URL }}"
