@@ -20,3 +20,5 @@ docker_service_name: "{{ service_user_service }}"
 force_reload: "{{ force_reload_user_service }}"
 host_logs_location: "{{ user_service_logs }}"
 docker_logs_location: /logs
+
+credentials: "{{ lookup('hashi_vault', 'secret={{ user_service_secret_path }}', url=VAULT_ADDR, token=VAULT_TOKEN) }}"

@@ -21,9 +21,11 @@ force_reload: "{{ force_reload_odk_service }}"
 host_logs_location: "{{ odk_service_logs }}"
 docker_logs_location: /logs
 
-ODK_DB_USERNAME: root
-ODK_DB_SCHEMA: xxx
-ODK_DB_PASSWORD: qwerty
-ODK_DB_NAME: xxx
-ODK_DB_PORT: 5466
-ODK_DB_URL: url
+credentials: "{{ lookup('hashi_vault', 'secret={{ odk_secret_path }}', url=VAULT_ADDR, token=VAULT_TOKEN) }}"
+
+ODK_DB_USERNAME: {{ credentials.ODK_DB_USERNAME }}
+ODK_DB_SCHEMA: {{ credentials.ODK_DB_SCHEMA }}
+ODK_DB_PASSWORD: {{ credentials.ODK_DB_PASSWORD }}
+ODK_DB_NAME: {{ credentials.ODK_DB_NAME }}
+ODK_DB_PORT: {{ credentials.ODK_DB_PORT }}
+ODK_DB_URL: {{ credentials.ODK_DB_URL }}

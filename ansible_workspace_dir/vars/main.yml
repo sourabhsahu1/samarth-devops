@@ -17,6 +17,8 @@ network_alias_user_service: user-service
 image_user_service: user-service
 user_service_logs: /mydata/logs/user-service
 force_reload_user_service: true
+user_service_secret_path: kv/data/samarth/user-service
+
 
 service_fusion_auth_service: fusion-auth-service
 service_fusion_auth_host_port: 9011
@@ -25,6 +27,7 @@ network_alias_fusion_auth_service: fusion-auth-service
 image_fusion_auth_service: samarth-fusion-auth-service
 fusion_auth_logs: /mydata/logs/fusion-auth
 force_reload_fusion_auth_service: true
+fusion_auth_secret_path: kv/data/samarth/fusion-auth
 
 service_odk_uci_adapter_service: odk-uci-adapter-service
 service_odk_uci_adapter_host_port: 5432
@@ -33,6 +36,7 @@ network_alias_odk_uci_adapter_service: odk-uci-adapter-service
 image_odk_uci_adapter_service: odk-uci-adapter
 odk_uci_adapter_logs: /mydata/logs/odk-uci-adapter-service
 force_reload_odk_uci_adapter_service: true
+odk_uci_adapter_secret_path: kv/data/samarth/odk-uci-adapter
 
 service_odk_service: odk-service
 service_odk_host_port: 8022
@@ -41,9 +45,10 @@ network_alias_odk_service: odk-service
 image_odk_service: odk-service
 odk_logs: /mydata/logs/odk-service
 force_reload_odk_service: true
+odk_secret_path: kv/data/samarth/odk
 
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"
 
-VAULT_TOKEN: #ADD VAULT TOKEN
-VAULT_URL: #Insert VAULT URL
+VAULT_TOKEN: #VAULT TOKEN
+VAULT_ADDR: #VAULT ADDR
