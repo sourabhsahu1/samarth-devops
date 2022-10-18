@@ -30,6 +30,16 @@ force_reload_fusion_auth_service: true
 fusion_auth_secret_path: kv/data/samarth/fusion-auth
 
 
+service_fa_relay_service: fa-relay-service
+service_fa_relay_host_port: 8080
+service_fa_relay_docker_port: 8080
+network_alias_fa_relay_service: fa-relay-service
+image_fa_relay_service: fa-relay
+fa_relay_logs: /mydata/logs/fa-relay
+force_reload_fa_relay_service: true
+fa_relay_secret_path: kv/data/samarth/fa-relay
+
+
 # For YAUS Hasura
 service_yaus_hasura_service: yaus_hasura-service
 service_yaus_hasura_host_port: 15003
@@ -68,6 +78,7 @@ image_yaus_web_service: yaus-web
 yaus_web_logs: /mydata/logs/yaus-web
 force_reload_yaus_web_service: true
 yaus_web_secret_path: kv/data/samarth/yaus-web
+
 
 service_odk_uci_adapter_service: odk-uci-adapter-service
 service_odk_uci_adapter_host_port: 5432

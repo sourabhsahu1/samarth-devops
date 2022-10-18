@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  {{ docker_service_name }}:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    hostname: api
+
+    {% if publish_ports == true %}
+
+    ports:
+      - {{ host_port }}:{{ docker_port }}
+      - '0.0.0.0:9232:9229' # V8 inspector for tools/run.js
+      - '0.0.0.0:9233:9230' # V8 inspector for src/server.js
+      
+    {% endif %}
+
+    networks:
+      application_default:
+        aliases:
+            - {{ network_alias_name }}
+
+    volumes:
+      - yarn:/home/node/.cache/yarn
+
+    environment:
+      - CORS_ORIGIN=http://localhost:3000,http://localhost:3001
+      - PORT={{ docker_port }}
+
+    command: node tools/run.js # or, `node --inspect=0.0.0.0:9229 tools/run.js`
+
+networks:
+  application_default:
+    external: true
+
+volumes:
+  yarn:
+
+networks:
+  application_default:
+    external: true

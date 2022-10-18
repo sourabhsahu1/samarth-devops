@@ -26,4 +26,6 @@
       tags: [deploy-odk-uci-adapter]
     - role: deploy-odk
       tags: [deploy-odk]
+    - role: deploy-fa-relay
+      tags: [deploy-fa-relay]
 
