@@ -38,6 +38,7 @@ network_alias_yaus_hasura_service: yaus_hasura-service
 image_yaus_hasura_service: samarth-yaus_hasura-service
 yaus_hasura_logs: /mydata/logs/yaus_hasura
 force_reload_yaus_hasura_service: true
+yaus_hasura_secret_path: kv/data/samarth/yaus-hasura
 
 # For YAUS Broker
 service_yaus_broker: yaus_broker-service
@@ -47,6 +48,7 @@ network_alias_yaus_broker_service: yaus_broker-service
 image_yaus_broker_service: samarth-yaus_broker-service
 yaus_broker_logs: /mydata/logs/yaus_broker
 force_reload_yaus_broker_service: true
+yaus_broker_secret_path: kv/data/samarth/yaus-broker
 
 # For YAUS Redis UI
 service_yaus_redis_ui: yaus_redis_ui-service
@@ -65,6 +67,7 @@ network_alias_yaus_web_service: yaus_web-service
 image_yaus_web_service: yaus-web
 yaus_web_logs: /mydata/logs/yaus-web
 force_reload_yaus_web_service: true
+yaus_web_secret_path: kv/data/samarth/yaus-web
 
 service_odk_uci_adapter_service: odk-uci-adapter-service
 service_odk_uci_adapter_host_port: 5432
