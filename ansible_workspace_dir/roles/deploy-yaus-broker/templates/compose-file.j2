@@ -5,8 +5,8 @@ services:
   {{ docker_service_name }}:
     image: {{ DOCKER_HUB_IMAGE }}
     environment:
-      - RABBITMQ_PASSWORD={{ RABBITMQ_PASSWORD }}
-      - RABBITMQ_USERNAME={{ RABBITMQ_USERNAME }}
+      - RABBITMQ_PASSWORD={{ credentials.RABBITMQ_PASSWORD }}
+      - RABBITMQ_USERNAME={{ credentials.RABBITMQ_USERNAME }}
     volumes:
       - yaus_broker:/bitnami
 

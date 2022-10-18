@@ -20,3 +20,6 @@ docker_service_name: "{{ service_yaus_web }}"
 force_reload: "{{ force_reload_yaus_web_service }}"
 host_logs_location: "{{ yaus_web_service_logs }}"
 docker_logs_location: /logs
+
+# Your credentials on the vault
+credentials: "{{ lookup('hashi_vault', 'secret={{ yaus_web_secret_path }}', url=VAULT_ADDR, token=VAULT_TOKEN) }}"

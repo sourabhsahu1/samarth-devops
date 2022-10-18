@@ -23,6 +23,5 @@ host_logs_location: "{{ yaus_hasura_logs }}"
 docker_logs_location: /logs
 
 DOCKER_HUB_IMAGE: hasura/graphql-engine:{{ tag }}
-HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://user:password@shortdb:5432/database
-HASURA_GRAPHQL_DATABASE_URL: postgres://user:password@shortdb:5432/database
-HASURA_GRAPHQL_ADMIN_SECRET: xxxx
+# Your credentials on the vault
+credentials: "{{ lookup('hashi_vault', 'secret={{ yaus_hasura_secret_path }}', url=VAULT_ADDR, token=VAULT_TOKEN) }}"

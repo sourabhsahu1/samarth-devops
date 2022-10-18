@@ -22,5 +22,6 @@ host_logs_location: "{{ yaus_broker_logs }}"
 docker_logs_location: /logs
 
 DOCKER_HUB_IMAGE: docker.io/bitnami/rabbitmq:{{ tag }}
-RABBITMQ_USERNAME: RABBITMQ_USERNAME
-RABBITMQ_PASSWORD: RABBITMQ_PASSWORD
+
+# Your credentials on the vault
+credentials: "{{ lookup('hashi_vault', 'secret={{ yaus_broker_secret_path }}', url=VAULT_ADDR, token=VAULT_TOKEN) }}"
