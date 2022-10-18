@@ -29,6 +29,15 @@ fusion_auth_logs: /mydata/logs/fusion-auth
 force_reload_fusion_auth_service: true
 fusion_auth_secret_path: kv/data/samarth/fusion-auth
 
+service_fa_relay_service: fa-relay-service
+service_fa_relay_host_port: 8080
+service_fa_relay_docker_port: 8080
+network_alias_fa_relay_service: fa-relay-service
+image_fa_relay_service: fa-relay
+fa_relay_logs: /mydata/logs/fa-relay
+force_reload_fa_relay_service: true
+fa_relay_secret_path: kv/data/samarth/fa-relay
+
 service_odk_uci_adapter_service: odk-uci-adapter-service
 service_odk_uci_adapter_host_port: 5432
 service_odk_uci_adapter_docker_port: 5433
