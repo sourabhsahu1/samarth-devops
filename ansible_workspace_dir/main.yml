@@ -18,3 +18,5 @@
       tags: [deploy-odk-uci-adapter]
     - role: deploy-odk
       tags: [deploy-odk]
+    - role: deploy-fa-captcha-service
+      tags: [deploy-fa-captcha-service]

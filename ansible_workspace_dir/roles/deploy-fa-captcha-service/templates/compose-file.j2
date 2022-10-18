@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  {{ docker_service_name }}:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    container_name: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    restart: unless-stopped
+    ports:
+      - {{ host_port }}:{{ docker_port }}

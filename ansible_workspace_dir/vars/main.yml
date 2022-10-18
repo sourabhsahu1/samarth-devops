@@ -19,7 +19,6 @@ user_service_logs: /mydata/logs/user-service
 force_reload_user_service: true
 user_service_secret_path: kv/data/samarth/user-service
 
-
 service_fusion_auth_service: fusion-auth-service
 service_fusion_auth_host_port: 9011
 service_fusion_auth_docker_port: 9011
@@ -46,6 +45,15 @@ image_odk_service: odk-service
 odk_logs: /mydata/logs/odk-service
 force_reload_odk_service: true
 odk_secret_path: kv/data/samarth/odk
+
+service_fa_captcha_service: fa-captcha-service
+service_fa_captcha_host_port: 9001
+service_fa_captcha_docker_port: 9000
+network_alias_fa_captcha_service: fa-captcha-service
+image_fa_captcha_service: fa-captcha-service
+fa_captcha_service_logs: /mydata/logs/fa-captcha-service
+force_reload_fa_captcha_service: true
+fa_captcha_service_secret_path: kv/data/samarth/fa-captcha-service
 
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"
