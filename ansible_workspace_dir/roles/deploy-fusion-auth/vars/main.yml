@@ -22,11 +22,15 @@ force_reload: "{{ force_reload_fusion_auth_service }}"
 host_logs_location: "{{ fusion_auth_logs }}"
 docker_logs_location: /logs
 
+credentials: "{{ lookup('hashi_vault', 'secret={{ fusion_auth_secret_path }}', url=VAULT_ADDR, token=VAULT_TOKEN) }}"
+
 DOCKER_HUB_IMAGE: fusionauth/fusionauth-app:{{ tag }}
-DATABASE_URL: jdbc:postgresql://db:5432/fusionauth
-POSTGRES_USER: xxxx
-POSTGRES_PASSWORD: xxxx
-DATABASE_USER: xxxx
-DATABASE_PASSWORD: xxxx
-FUSIONAUTH_MEMORY: 2048M
-ELASTIC_SEARCH_URL: http://localhost:9200
+DATABASE_URL: "{{ credentials.DATABASE_URL }}"
+POSTGRES_USER: "{{ credentials.POSTGRES_USER }}"
+POSTGRES_PASSWORD: "{{ credentials.POSTGRES_PASSWORD }}"
+DATABASE_USER: "{{ credentials.DATABASE_USER }}"
+DATABASE_PASSWORD: "{{ credentials.DATABASE_PASSWORD }}"
+FUSIONAUTH_MEMORY: "{{ credentials.FUSIONAUTH_MEMORY }}"
+ELASTIC_SEARCH_URL: "{{ credentials.ELASTIC_SEARCH_URL }}"
+
+

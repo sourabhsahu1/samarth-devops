@@ -4,11 +4,11 @@
 service_esamwad_backend_service: esamwad-backend-service
 service_esamwad_backend_host_port: 8006
 service_esamwad_backend_docker_port: 8000
-network_alias_esamwad_backend_service: esamwad-backend-service 
+network_alias_esamwad_backend_service: esamwad-backend-service
 image_esamwad_backend_service: esamwad-backend
 esamwad_backend_logs: /mydata/logs/esamwad-backend
 force_reload_esmawad_backend_service: true
-
+esamwad_secret_path: kv/data/samarth/esamwad-backend
 
 service_user_service: user-service
 service_user_host_port: 3006
@@ -17,6 +17,8 @@ network_alias_user_service: user-service
 image_user_service: user-service
 user_service_logs: /mydata/logs/user-service
 force_reload_user_service: true
+user_service_secret_path: kv/data/samarth/user-service
+
 
 service_fusion_auth_service: fusion-auth-service
 service_fusion_auth_host_port: 9011
@@ -25,6 +27,8 @@ network_alias_fusion_auth_service: fusion-auth-service
 image_fusion_auth_service: samarth-fusion-auth-service
 fusion_auth_logs: /mydata/logs/fusion-auth
 force_reload_fusion_auth_service: true
+fusion_auth_secret_path: kv/data/samarth/fusion-auth
+
 
 # For YAUS Hasura
 service_yaus_hasura_service: yaus_hasura-service
@@ -62,5 +66,27 @@ image_yaus_web_service: yaus-web
 yaus_web_logs: /mydata/logs/yaus-web
 force_reload_yaus_web_service: true
 
+service_odk_uci_adapter_service: odk-uci-adapter-service
+service_odk_uci_adapter_host_port: 5432
+service_odk_uci_adapter_docker_port: 5433
+network_alias_odk_uci_adapter_service: odk-uci-adapter-service
+image_odk_uci_adapter_service: odk-uci-adapter
+odk_uci_adapter_logs: /mydata/logs/odk-uci-adapter-service
+force_reload_odk_uci_adapter_service: true
+odk_uci_adapter_secret_path: kv/data/samarth/odk-uci-adapter
+
+service_odk_service: odk-service
+service_odk_host_port: 8022
+service_odk_docker_port: 8080
+network_alias_odk_service: odk-service
+image_odk_service: odk-service
+odk_logs: /mydata/logs/odk-service
+force_reload_odk_service: true
+odk_secret_path: kv/data/samarth/odk
+
+
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"
+
+VAULT_TOKEN: #VAULT TOKEN
+VAULT_ADDR: #VAULT ADDR

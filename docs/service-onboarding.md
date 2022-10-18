@@ -19,7 +19,8 @@ service_repo_name
 
 - Now go to build folder and create a new item. Copy an existing build job for this new item.
 - Configure the newly created job and modify the paths of `Dockerfile`, `Jenkins`, `Git Repo` according to your repository structure.
-- Test a build by clicking build now
+- Test a build by clicking `Scan Multibranch pipeline now`
+- **The first build will fail on any branch always**, rebuild again by clicking `Rebuild with Parameters`
 
 ### Steps for deploy
 
@@ -35,6 +36,7 @@ service_repo_name
 
 - ansible playbooks have global variables declared in `group_vars/dev.yml` and `vars/main.yml` in the `ansible_workspace_dir`. Local variables are there in each roles' `vars/main.yml`
 
+- We use hashicorp vaults to store passwords so modify the `secret path` and `VAULT_TOKEN` and `VAULT_ADDR` manually.  
 
 # Possible upcoming updates
 

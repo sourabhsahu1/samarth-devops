@@ -22,3 +22,8 @@
       tags: [deploy-yaus-redis-ui]
     - role: deploy-yaus-web
       tags: [deploy-yaus-web]
+    - role: deploy-odk-uci-adapter
+      tags: [deploy-odk-uci-adapter]
+    - role: deploy-odk
+      tags: [deploy-odk]
+
