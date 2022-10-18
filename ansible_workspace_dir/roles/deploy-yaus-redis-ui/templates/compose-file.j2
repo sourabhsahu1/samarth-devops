@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+
+  {{ docker_service_name }}:
+    image: {{ DOCKER_HUB_IMAGE }}
+    restart: always
+    volumes:
+      - redisinsight:/db
+    volumes:
+      - yaus_redis_ui:/bitnami
+
+    {% if publish_ports == true %}
+
+    ports:
+      - {{ host_port }}:{{ docker_port }}
+
+    {% endif %}
+
+    networks:
+      application_default:
+        aliases:
+            - {{ network_alias_name }}
+
+networks:
+  application_default:
+    external: true
+
+volumes:
+  yaus_redis_ui:
