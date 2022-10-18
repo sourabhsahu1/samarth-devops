@@ -14,7 +14,16 @@
       tags: [deploy-user-service]
     - role: deploy-fusion-auth
       tags: [deploy-fusion-auth]
+    - role: deploy-yaus-hasura
+      tags: [deploy-yaus-hasura]
+    - role: deploy-yaus-broker
+      tags: [deploy-yaus-broker]
+    - role: deploy-yaus-redis-ui
+      tags: [deploy-yaus-redis-ui]
+    - role: deploy-yaus-web
+      tags: [deploy-yaus-web]
     - role: deploy-odk-uci-adapter
       tags: [deploy-odk-uci-adapter]
     - role: deploy-odk
       tags: [deploy-odk]
+
