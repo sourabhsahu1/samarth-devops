@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  {{ docker_service_name }}:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    ports:
+      - {{ service_fa_proxy_host_http_port }}:80
+      - {{ service_fa_proxy_host_https_port }}:443
+    networks:
+      application_default:
+        aliases:
+            - {{ network_alias_name }}
+        
+networks:
+  application_default:
+    external: true
+

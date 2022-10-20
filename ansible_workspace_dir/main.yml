@@ -28,4 +28,6 @@
       tags: [deploy-odk]
     - role: deploy-fa-relay
       tags: [deploy-fa-relay]
+    - role: deploy-fa-proxy
+      tags: [deploy-fa-proxy]
 

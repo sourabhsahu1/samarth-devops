@@ -1,0 +1,22 @@
+---
+# vars file for deploy-sb-ext
+# For script
+template_compose_file_name: compose-file.j2
+template_env_file_name: env.j2
+compose_file_name: "{{ service_fa_proxy }}.yml"
+env_file_name: "{{ service_fa_proxy }}.env"
+compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name }}"
+env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
+user_friendly_name: fa_proxy
+
+docker_port: "{{ service_fa_proxy_docker_port }}"
+host_port: "{{ service_fa_proxy_host_port }}"
+image_name: "{{ image_fa_proxy_service }}"
+tag: "{{ tags_fa_proxy_service }}"
+replicas: "{{ service_replicas_fa_proxy_service }}"
+network_alias_name: "{{ network_alias_fa_proxy_service }}"
+docker_service_stack_name: samarth
+docker_service_name: "{{ service_fa_proxy }}"
+force_reload: "{{ force_reload_fa_proxy_service }}"
+host_logs_location: "{{ fa_proxy_logs }}"
+docker_logs_location: /logs

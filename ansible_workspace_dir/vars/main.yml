@@ -98,6 +98,14 @@ odk_logs: /mydata/logs/odk-service
 force_reload_odk_service: true
 odk_secret_path: kv/data/samarth/odk
 
+# For fa-proxy
+service_fa_proxy: fa_proxy-service
+service_fa_proxy_host_http_port: 9080
+service_fa_proxy_host_https_port: 9443
+network_alias_fa_proxy_service: fa_proxy-service
+image_fa_proxy_service: fa-proxy
+fa_proxy_logs: /mydata/logs/fa-proxy
+force_reload_fa_proxy_service: true
 
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"
