@@ -32,3 +32,5 @@
       tags: [deploy-fa-proxy]
     - role: deploy-cdac-service
       tags: [deploy-cdac-service]
+    - role: deploy-fa-captcha-service
+      tags: [deploy-fa-captcha-service]

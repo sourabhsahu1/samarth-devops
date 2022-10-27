@@ -116,5 +116,15 @@ cdac_service_secret_path: kv/data/samarth/cdac-service
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"
 
+#For fa-captcha-service
+service_fa_captcha_service: fa-captcha-service
+service_fa_captcha_host_port: 9001
+service_fa_captcha_docker_port: 9000
+network_alias_fa_captcha_service: fa-captcha-service
+image_fa_captcha_service: fa-captcha-service
+fa_captcha_service_logs: /mydata/logs/fa-captcha-service
+force_reload_fa_captcha_service: true
+fa_captcha_service_secret_path: kv/data/samarth/fa-captcha-service
+
 VAULT_TOKEN: #VAULT TOKEN
 VAULT_ADDR: #VAULT ADDR
