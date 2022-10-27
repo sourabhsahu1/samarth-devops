@@ -19,7 +19,6 @@ user_service_logs: /mydata/logs/user-service
 force_reload_user_service: true
 user_service_secret_path: kv/data/samarth/user-service
 
-
 service_fusion_auth_service: fusion-auth-service
 service_fusion_auth_host_port: 9011
 service_fusion_auth_docker_port: 9011
@@ -29,7 +28,6 @@ fusion_auth_logs: /mydata/logs/fusion-auth
 force_reload_fusion_auth_service: true
 fusion_auth_secret_path: kv/data/samarth/fusion-auth
 
-
 service_fa_relay_service: fa-relay-service
 service_fa_relay_host_port: 8080
 service_fa_relay_docker_port: 8080
@@ -38,7 +36,6 @@ image_fa_relay_service: fa-relay
 fa_relay_logs: /mydata/logs/fa-relay
 force_reload_fa_relay_service: true
 fa_relay_secret_path: kv/data/samarth/fa-relay
-
 
 # For YAUS Hasura
 service_yaus_hasura_service: yaus_hasura-service
@@ -79,7 +76,6 @@ yaus_web_logs: /mydata/logs/yaus-web
 force_reload_yaus_web_service: true
 yaus_web_secret_path: kv/data/samarth/yaus-web
 
-
 service_odk_uci_adapter_service: odk-uci-adapter-service
 service_odk_uci_adapter_host_port: 5432
 service_odk_uci_adapter_docker_port: 5433
@@ -106,6 +102,16 @@ network_alias_fa_proxy_service: fa_proxy-service
 image_fa_proxy_service: fa-proxy
 fa_proxy_logs: /mydata/logs/fa-proxy
 force_reload_fa_proxy_service: true
+
+# For cdac-service
+service_cdac_service: cdac-service
+service_cdac_host_port: 8090
+service_cdac_docker_port: 8000
+network_alias_cdac_service: cdac-service
+image_cdac_service: cdac-service
+cdac_service_logs: /mydata/logs/cdac-service
+force_reload_cdac_service: true
+cdac_service_secret_path: kv/data/samarth/cdac-service
 
 proxy_site_key: "{{ core_vault_proxy_site_key }}"
 proxy_site_crt: "{{ core_vault_proxy_site_crt }}"

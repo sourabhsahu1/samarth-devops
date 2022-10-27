@@ -1,0 +1,29 @@
+---
+# vars file for deploy-sb-ext
+# For script
+template_compose_file_name: compose-file.j2
+template_env_file_name: env.j2
+compose_file_name: "{{ service_cdac_service }}.yml"
+env_file_name: "{{ service_cdac_service }}.env"
+compose_file_deployment_location: "{{ compose_files_dir }}/{{ compose_file_name }}"
+env_file_deployment_location: "{{ env_files_dir }}/{{ env_file_name }}"
+user_friendly_name: cdac service
+
+docker_port: "{{ service_cdac_docker_port }}"
+host_port: "{{ service_cdac_host_port }}"
+image_name: "{{ image_cdac_service }}"
+tag: "{{ tags_cdac_service }}"
+replicas: "{{ service_replicas_cdac_service }}"
+network_alias_name: "{{ network_alias_cdac_service }}"
+docker_service_stack_name: samarth
+docker_service_name: "{{ service_cdac_service }}"
+force_reload: "{{ force_reload_cdac_service }}"
+host_logs_location: "{{ cdac_service_logs }}"
+docker_logs_location: /logs
+
+credentials: "{{ lookup('hashi_vault', 'secret={{ cdac_service_secret_path }}', url=VAULT_ADDR, token=VAULT_TOKEN) }}"
+
+USERNAME: "{{ credentials.USERNAME }}"
+SENDER_ID: "{{ credentials.SENDER_ID }}"
+PASSWORD: "{{ credentials.PASSWORD }}"
+SECURE_KEY: "{{ credentials.SECURE_KEY }}"
