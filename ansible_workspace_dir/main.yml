@@ -30,4 +30,5 @@
       tags: [deploy-fa-relay]
     - role: deploy-fa-proxy
       tags: [deploy-fa-proxy]
-
+    - role: deploy-cdac-service
+      tags: [deploy-cdac-service]

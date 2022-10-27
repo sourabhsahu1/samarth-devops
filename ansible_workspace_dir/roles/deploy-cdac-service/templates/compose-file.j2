@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  {{ docker_service_name }}:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    restart: always
+    environment:
+      USERNAME: {{ USERNAME }}
+      SENDER_ID: {{ SENDER_ID }}
+      PASSWORD: {{ PASSWORD }}
+      SECURE_KEY: {{ SECURE_KEY }}
+    ports:
+      - {{ host_port }}:{{ docker_port }}
+    env_file:
+      - {{ env_file_deployment_location }}
+    
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://cdac:8080/api"]
+      interval: 2s
+      timeout: 5s
+      retries: 20
