@@ -1,0 +1,55 @@
+version: '3'
+
+services:
+  {{ docker_service_name }}:
+    image: {{ docker_hub_url }}/{{ image_name }}:{{ tag }}
+    environment:
+      DEBUG:{{ credentials.DEBUG }}
+      SECRET_KEY:{{ credentials.SECRET_KEY }}
+      DJANGO_ALLOWED_HOSTS:{{ credentials.DJANGO_ALLOWED_HOSTS }}
+      SQL_ENGINE:{{ credentials.SQL_ENGINE }}
+      SQL_DATABASE:{{ credentials.SQL_DATABASE }}
+      SQL_USER:{{ credentials.SQL_USER }}
+      SQL_PASSWORD:{{ credentials.SQL_PASSWORD }}
+      SQL_HOST:{{ credentials.SQL_HOST }}
+      SQL_PORT:{{ credentials.SQL_PORT }}
+      RABBITMQ_USERNAME:{{ credentials.RABBITMQ_USERNAME }}
+      RABBITMQ_PASSWORD:{{ credentials.RABBITMQ_PASSWORD }}
+      CELERY_BROKER_URL:{{ credentials.CELERY_BROKER_URL }}
+      CELERY_RESULT_BACKEND:{{ credentials.CELERY_RESULT_BACKEND }}
+      CELERY_FOLDER_TO_MONITOR:{{ credentials.CELERY_FOLDER_TO_MONITOR }}
+      CELERY_CONCURRENCY:{{ credentials.CELERY_CONCURRENCY }}
+      TEMPLATOR_URL:{{ credentials.TEMPLATOR_URL }}
+      DOC_GENERATOR_ID:{{ credentials.DOC_GENERATOR_ID }}
+
+      # templator env varibales:
+      # Hasura
+      HASURA_ADMIN_PASS:{{ credentials.HASURA_ADMIN_PASS }}
+      HASURA_VERSION:{{ credentials.HASURA_VERSION }}
+
+      # PSQL Docker-Compose
+      PSQL_DB_URL:{{ credentials.PSQL_DB_URL }}
+      DB_PASSWORD:{{ credentials.DB_PASSWORD }}
+      DB_USERNAME:{{ credentials.DB_USERNAME }}
+      DB_NAME:{{ credentials.DB_NAME }}
+      DATABASE_DEBUG:{{ credentials.DATABASE_DEBUG }}
+      POSTGRES_HOST:{{ credentials.POSTGRES_HOST }}
+
+      # Prisma
+      DATABASE_URL: {{credentials.DATABASE_URL}}
+
+#    command: gunicorn --workers=8 --threads=10 pdf.wsgi:application --bind 0.0.0.0:8000
+#    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - static_volume:/usr/src/app/staticfiles
+    expose:
+      - {{ host_port }}
+    ports:
+      - {{ host_port }}:{{ docker_port }}
+    env_file:
+      - {{ env_file_deployment_location }}
+
+volumes:
+  postgres_data:
+  static_volume:
+  doc_rabbitmq:
